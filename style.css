@@ -1,14 +1,48 @@
+/* Reset minimal */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #f3f4f6, #e5e7eb);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Card container */
+main {
+    background: white;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
     text-align: center;
-    padding-top: 100px;
+    max-width: 400px;
+    width: 90%;
 }
 
 h1 {
-    color: #2c3e50;
+    color: #1f2937;
+    margin-bottom: 15px;
 }
 
 p {
-    color: #555;
+    color: #4b5563;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    main {
+        padding: 25px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
 }
