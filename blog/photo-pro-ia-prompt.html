@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photo de profil pro avec l'IA : le prompt studio</title>
+  <meta name="description" content="Un prompt pour transformer n'importe quelle photo en portrait de studio pro. À coller dans ChatGPT ou Gemini avec ta photo. Résultat en quelques secondes.">
+  <meta property="og:title" content="Photo de profil pro avec l'IA : le prompt studio">
+  <meta property="og:description" content="Un prompt pour transformer n'importe quelle photo en portrait de studio pro. À coller dans ChatGPT ou Gemini avec ta photo. Résultat en quelques secondes.">
+  <meta property="og:image" content="/blog/images/image-photo-pro.png">
+  <meta property="og:type" content="article">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chau+Philomene+One&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    .article-page-main { padding-top: 90px; padding-bottom: 40px; }
+  </style>
+</head>
+<body>
+
+<header class="nav-bar">
+  <div class="nav-inner">
+    <a href="/" class="logo">LES FÉES DE L'IA <span aria-hidden="true">✨</span></a>
+    <nav aria-label="Navigation principale">
+      <ul class="nav-links">
+        <li><a href="/#articles">Blog</a></li>
+        <li>
+          <a href="https://www.fees-de-lia.com/catalogue"
+             class="nav-btn"
+             target="_blank"
+             rel="noopener">
+            Catalogue gratuit
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="article-page-main">
+<article class="fdia-article">
+<style>
+  .fdia-article{
+    --corail:#d25050;--rose:#F5E8EF;--slate:#3d4a55;--gris:#8a8f96;--blanc:#ffffff;
+    font-family:'Poppins','Inter',Arial,sans-serif;color:var(--slate);line-height:1.7;
+    max-width:720px;margin:0 auto;padding:0 16px 60px;
+  }
+  .fdia-article *{box-sizing:border-box}
+  .fdia-article .tag{display:inline-block;background:var(--corail);color:#fff;font-size:12px;
+    font-weight:700;letter-spacing:.5px;text-transform:uppercase;padding:5px 14px;
+    border-radius:50px;margin-bottom:16px}
+  .fdia-article h1{font-family:'Chau Philomene One','Poppins',Arial,sans-serif;font-size:34px;
+    line-height:1.2;color:var(--slate);margin:0 0 14px;position:relative}
+  .fdia-article .intro-meta{font-size:14px;color:var(--gris);margin-bottom:28px}
+  .fdia-article .chapo{font-size:19px;color:var(--slate);background:var(--rose);border-radius:16px;
+    padding:22px 24px;margin-bottom:36px}
+  .fdia-article h2{font-family:'Chau Philomene One','Poppins',Arial,sans-serif;font-size:24px;
+    color:var(--slate);margin:44px 0 16px}
+  .fdia-article h3{font-family:'Chau Philomene One','Poppins',Arial,sans-serif;font-size:19px;
+    color:var(--corail);margin:26px 0 10px}
+  .fdia-article p{margin:0 0 16px;font-size:16px}
+  .fdia-article strong{color:var(--slate)}
+  .fdia-article .def{font-weight:700}
+  .fdia-article ul{margin:0 0 20px;padding-left:20px}
+  .fdia-article li{margin-bottom:8px;font-size:16px}
+  .fdia-article a{color:var(--corail);text-decoration:underline}
+  .fdia-article .tablewrap{overflow-x:auto;border-radius:16px;
+    box-shadow:0 8px 24px rgba(61,74,85,.08);margin:24px 0 32px}
+  .fdia-article table{width:100%;border-collapse:collapse;background:#fff;min-width:520px}
+  .fdia-article th,.fdia-article td{padding:13px 16px;text-align:left;
+    border-bottom:1px solid var(--rose);font-size:15px}
+  .fdia-article thead th{background:var(--slate);color:#fff}
+  .fdia-article tbody th{font-weight:700;color:var(--corail);background:var(--rose)}
+  .fdia-article .faq-item{border-bottom:1px solid var(--rose);padding:18px 0}
+  .fdia-article .faq-q{font-weight:700;color:var(--slate);margin-bottom:8px;font-size:16px}
+  .fdia-article .cta{background:var(--corail);color:#fff;border-radius:20px;
+    padding:32px 28px;text-align:center;margin:44px 0;position:relative;overflow:hidden}
+  .fdia-article .cta h3{color:#fff;margin-top:0}
+  .fdia-article .cta a.btn{display:inline-block;background:#fff;color:var(--corail);
+    font-weight:700;padding:12px 26px;border-radius:50px;text-decoration:none;margin-top:8px}
+  .fdia-article .source-note{font-size:13px;color:var(--gris);margin-top:40px;
+    border-top:1px solid var(--rose);padding-top:16px}
+  .fdia-article .prompt-box{background:var(--rose);border-left:4px solid var(--corail);
+    border-radius:0 12px 12px 0;padding:18px 22px;margin:24px 0;font-family:monospace;
+    font-size:15px;line-height:1.6;color:var(--slate)}
+  .fdia-article .spk{position:absolute;font-size:18px;pointer-events:none;opacity:.85;
+    animation:fdiaFloat 3.4s ease-in-out infinite}
+  .fdia-article .spk.s1{top:-14px;left:-6px}
+  .fdia-article .spk.s2{top:-6px;right:-4px;font-size:14px;animation-delay:.8s}
+  .fdia-article .spk.s3{bottom:-10px;left:40%;font-size:13px;animation-delay:1.6s}
+  @keyframes fdiaFloat{0%,100%{transform:translateY(0) rotate(0);opacity:.5}
+    50%{transform:translateY(-7px) rotate(12deg);opacity:1}}
+  .fdia-article .chapo{animation:fdiaFade .7s ease both}
+  .fdia-article h2{animation:fdiaFade .6s ease both}
+  @keyframes fdiaFade{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+  .fdia-article .cta a.btn{animation:fdiaPulse 2s ease-in-out infinite}
+  @keyframes fdiaPulse{0%,100%{transform:scale(1);box-shadow:0 0 0 0 rgba(255,255,255,.5)}
+    50%{transform:scale(1.05);box-shadow:0 0 0 12px rgba(255,255,255,0)}}
+  .fdia-article .cta .spk{color:#fff;opacity:.9}
+  .fdia-article .cta .c1{top:14px;left:18px}
+  .fdia-article .cta .c2{top:22px;right:22px;font-size:15px}
+  .fdia-article .cta .c3{bottom:16px;left:30%;font-size:13px}
+  @media(prefers-reduced-motion:reduce){
+    .fdia-article .spk,.fdia-article .chapo,.fdia-article h2,
+    .fdia-article .cta a.btn{animation:none}
+  }
+</style>
+
+  <span class="tag">Prompts IA</span>
+  <h1>
+    Ta photo de profil pro en version studio : le prompt à coller dans ton IA
+    <span class="spk s1" aria-hidden="true">✨</span>
+    <span class="spk s2" aria-hidden="true">🧚‍♀️</span>
+    <span class="spk s3" aria-hidden="true">✨</span>
+  </h1>
+  <p class="intro-meta">Mis à jour en août 2026 · Lecture : 4 minutes</p>
+
+  <p class="chapo">
+    Marre des selfies mal cadrés sur ton profil LinkedIn ou Malt ? Ce prompt transforme n'importe quelle photo en portrait de studio professionnel. Tu le colles dans ChatGPT ou Gemini, tu joins ta photo, et tu obtiens un résultat utilisable en quelques secondes.
+  </p>
+
+  <h2>Pourquoi ta photo de profil compte plus que tu ne le penses</h2>
+  <p>Une cliente potentielle voit ta photo avant de lire une seule ligne de ton profil. C'est automatique, inconscient, et ça influence sa première impression en moins d'une seconde. Une photo sombre, floue ou mal cadrée envoie un signal de manque de sérieux, même si ton offre est excellente.</p>
+  <p>Le problème : une vraie séance photo professionnelle coûte entre 200 et 500 euros, prend du temps à organiser et donne des images souvent rigides. Avec l'IA, tu peux générer en quelques minutes une version "portrait studio" à partir d'une photo que tu as déjà.</p>
+  <p>Ce n'est pas une solution permanente pour tout : une vraie photo de toi reste plus authentique pour beaucoup de contextes. Mais c'est parfait quand tu as besoin d'un visuel pro rapidement, ou quand ta dernière photo date de trop longtemps.</p>
+
+  <h2>Ce que fait ce prompt</h2>
+  <p>
+    <span class="def">Ce prompt décrit à l'IA exactement les caractéristiques d'un portrait de studio professionnel : éclairage softbox, fond neutre, cadrage trois-quarts, rendu photoréaliste et éditorial.</span>
+    Tu joins ta photo à la demande, et l'IA génère une version retravaillée dans ce style. Elle ne change pas ton visage ni ton expression : elle transforme le contexte visuel (éclairage, fond, qualité générale) pour lui donner un rendu professionnel.
+  </p>
+  <p><strong>Ce que ce prompt produit :</strong> une image photoréaliste de qualité éditoriale, utilisable comme photo de profil sur LinkedIn, Malt, Instagram pro ou ton site web.</p>
+  <p><strong>Ce que ce prompt ne fait pas :</strong> il ne retouche pas tes traits, ne modifie pas ton expression, et ne te "reconstruit" pas entièrement. Le résultat dépend aussi de la qualité de la photo que tu fournis.</p>
+
+  <h2>Le prompt à copier-coller</h2>
+  <p>Colle ce texte dans ChatGPT (avec DALL-E) ou Gemini, et joins ta photo :</p>
+
+  <div class="prompt-box">Photo de portrait professionnel en studio, éclairage doux et lumineux type softbox, arrière-plan clair et neutre (gris perle ou beige lumineux), sujet portant une chemise ou un blazer clair élégant, expression avenante et confiante, léger sourire naturel, angle de trois-quarts face à la caméra, lumière homogène et flatteuse sur le visage, mise au point nette sur les traits, texture de la peau visible, photoréaliste, style éditorial professionnel, portrait à l'objectif 85mm, faible profondeur de champ, tons clairs et chaleureux, rendu naturel et soigné.</div>
+
+  <h2>Comment adapter le prompt à ta charte</h2>
+  <p>Le prompt de base donne un résultat "neutre professionnel". Tu peux le personnaliser :</p>
+  <ul>
+    <li><strong>Pour une ambiance plus dynamique :</strong> remplace "léger sourire naturel" par "sourire affirmé et dynamique, regard direct".</li>
+    <li><strong>Pour des couleurs dans ta charte :</strong> ajoute "veste corail ou rose poudré" à la description de la tenue.</li>
+    <li><strong>Pour un fond plus distinctif :</strong> remplace "gris perle ou beige lumineux" par "fond uni rose poudré" ou la couleur de ta charte.</li>
+    <li><strong>Pour un résultat plus créatif :</strong> ajoute "lumière zénithale dramatique" ou "éclairage contrasté façon shooting de mode".</li>
+  </ul>
+  <p>Génère 3 à 5 variantes avec des petites modifications et choisis celle qui correspond le mieux à ton identité visuelle.</p>
+
+  <h2>Questions fréquentes</h2>
+  <div class="faq-item">
+    <div class="faq-q">Est-ce que le résultat est assez réaliste pour être utilisé professionnellement ?</div>
+    <p>Oui, pour la grande majorité des usages : photo de profil LinkedIn, profil Malt, page À propos d'un site. Les outils de génération IA actuels produisent des résultats très proches du photoréalisme. C'est plus difficile à distinguer d'une vraie photo que ça ne l'était il y a deux ans.</p>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Faut-il une photo de départ de bonne qualité ?</div>
+    <p>Oui, la qualité du résultat dépend directement de la photo de référence. Une photo nette, bien éclairée et cadrée correctement donnera un bien meilleur résultat qu'une photo sombre ou floue. Pas besoin d'une photo pro : une bonne photo prise en plein jour avec ton téléphone suffit.</p>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Quel outil est le meilleur pour ce type de prompt ?</div>
+    <p>ChatGPT avec DALL-E et Gemini sont les plus accessibles si tu as déjà un compte. Adobe Firefly est excellent pour le photoréalisme si tu travailles dans l'écosystème Adobe. Les résultats varient d'un outil à l'autre : teste avec deux ou trois pour comparer avant de garder le meilleur résultat.</p>
+  </div>
+
+  <div class="cta">
+    <span class="spk c1" aria-hidden="true">✨</span>
+    <span class="spk c2" aria-hidden="true">✨</span>
+    <span class="spk c3" aria-hidden="true">✨</span>
+    <h3>Reçois le catalogue des services IA prêts à vendre</h3>
+    <p>Des prompts pratiques comme celui-ci + des services que tu peux proposer à tes clients dès maintenant.</p>
+    <a class="btn" href="https://www.fees-de-lia.com/catalogue"
+       target="_blank" rel="noopener">
+      Recevoir le catalogue gratuit
+    </a>
+  </div>
+
+  <p class="source-note">
+    Informations vérifiées en août 2026. Les outils de génération d'images évoluent rapidement, les résultats peuvent varier selon la version utilisée.
+  </p>
+
+</article>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Est-ce que le résultat est assez réaliste pour être utilisé professionnellement ?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Oui, pour la grande majorité des usages : photo de profil LinkedIn, profil Malt, page À propos d'un site. Les outils de génération IA actuels produisent des résultats très proches du photoréalisme." }
+    },
+    {
+      "@type": "Question",
+      "name": "Faut-il une photo de départ de bonne qualité ?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Oui, la qualité du résultat dépend directement de la photo de référence. Une photo nette, bien éclairée et cadrée correctement donnera un bien meilleur résultat. Pas besoin d'une photo pro : une bonne photo prise en plein jour avec ton téléphone suffit." }
+    },
+    {
+      "@type": "Question",
+      "name": "Quel outil est le meilleur pour ce type de prompt ?",
+      "acceptedAnswer": { "@type": "Answer", "text": "ChatGPT avec DALL-E et Gemini sont les plus accessibles si tu as déjà un compte. Adobe Firefly est excellent pour le photoréalisme. Les résultats varient d'un outil à l'autre : teste avec deux ou trois pour comparer avant de garder le meilleur résultat." }
+    }
+  ]
+}
+</script>
+</main>
+
+<footer class="site-footer">
+  <p class="footer-brand">LES FÉES DE L'IA</p>
+  <p class="footer-copy">&copy; 2026 LES FÉES DE L'IA. Tous droits réservés.</p>
+</footer>
+
+</body>
+</html>
