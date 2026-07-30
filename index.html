@@ -1,17 +1,191 @@
+<!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Mon premier site web avec Git">
-    <title>Mon Mini Site</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ================================================
+  NOTES SEO (ne pas afficher sur la page)
+  Balise title   : Blog LES FÉES DE L'IA — Usages IA concrets pour freelances (57 car.)
+  Meta description : Passe de spectatrice à celle qui maîtrise des usages IA concrets et les transforme en services à vendre. Le blog de LES FÉES DE L'IA. (153 car.)
+  Police titres  : Chau Philomene One (Google Fonts) — fallback Poppins
+  ================================================ -->
+
+  <title>Blog LES FÉES DE L'IA — Usages IA concrets pour freelances</title>
+  <meta name="description" content="Passe de spectatrice à celle qui maîtrise des usages IA concrets et les transforme en services à vendre. Le blog de LES FÉES DE L'IA.">
+
+  <!-- Google Fonts : Chau Philomene One (titres) + Poppins (corps) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chau+Philomene+One&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main>
-        <h1>Bienvenue</h1>
-        <p>Ceci est mon premier site versionné avec Git.</p>
-        <footer>
-            <p>&copy; 2024 - Mon Mini Site</p>
-        </footer>
-    </main>
+
+<!-- ==================== NAVIGATION ==================== -->
+<header class="nav-bar">
+  <div class="nav-inner">
+    <a href="/" class="logo">LES FÉES DE L'IA <span aria-hidden="true">✨</span></a>
+    <nav aria-label="Navigation principale">
+      <ul class="nav-links">
+        <li><a href="#articles">Blog</a></li>
+        <li>
+          <a href="https://www.fees-de-lia.com/catalogue"
+             class="nav-btn"
+             target="_blank"
+             rel="noopener">
+            Catalogue gratuit
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- ==================== HERO ==================== -->
+<section class="hero">
+  <div class="hero-inner">
+    <h1 class="hero-title">
+      <span class="spk s1" aria-hidden="true">✨</span>
+      <span class="spk s2" aria-hidden="true">🧚‍♀️</span>
+      <span class="spk s3" aria-hidden="true">✨</span>
+      Tes essais avec l'IA sont décevants<br>
+      pendant que d'autres cartonnent&nbsp;?
+    </h1>
+    <p class="hero-sub">
+      Je t'aide à passer de spectatrice à celle qui maîtrise des usages IA concrets
+      et les transforme en services à vendre.
+    </p>
+    <div class="hero-btns">
+      <a href="https://www.fees-de-lia.com/catalogue"
+         class="btn btn-primary"
+         target="_blank"
+         rel="noopener">
+        Recevoir le catalogue gratuit
+      </a>
+      <a href="#articles" class="btn btn-secondary">
+        Lire le blog ↓
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== ARTICLES ==================== -->
+<section class="articles-section" id="articles">
+  <div class="section-inner">
+    <h2 class="section-title">Articles récents</h2>
+
+    <div class="articles-grid">
+
+      <article class="card">
+        <span class="card-tag">Comprendre l'IA</span>
+        <h3 class="card-title">
+          <a href="/blog/erreur-ia-google">L'IA de Google peut se tromper : comment garder un oeil critique sur tes recherches</a>
+        </h3>
+        <p class="card-desc">Google affiche des réponses IA qui peuvent être fausses. 3 réflexes simples pour ne plus publier une info erronée sans le savoir.</p>
+        <a href="/blog/erreur-ia-google" class="card-link">Lire l'article →</a>
+      </article>
+
+      <article class="card">
+        <span class="card-tag">Prompts IA</span>
+        <h3 class="card-title">
+          <a href="/blog/avatar-ia-prompt">Crée ton avatar IA en quelques minutes : le prompt qui change ta présence en ligne</a>
+        </h3>
+        <p class="card-desc">Un prompt simple pour générer une version IA de toi — photo de profil pro, visuel cohérent pour tes réseaux, sans session photo.</p>
+        <a href="/blog/avatar-ia-prompt" class="card-link">Lire l'article →</a>
+      </article>
+
+      <article class="card">
+        <span class="card-tag">Gagner du temps avec l'IA</span>
+        <h3 class="card-title">
+          <a href="/blog/suivi-budget-automatique-claude-notion">Suivi budget automatisé avec Claude et Notion : fini la saisie manuelle</a>
+        </h3>
+        <p class="card-desc">Claude surveille tes emails Systèmio, extrait chaque paiement et remplit ta base Notion. Ton CA en temps réel, sans lever le petit doigt.</p>
+        <a href="/blog/suivi-budget-automatique-claude-notion" class="card-link">Lire l'article →</a>
+      </article>
+
+      <article class="card">
+        <span class="card-tag">Gagner du temps avec l'IA</span>
+        <h3 class="card-title">
+          <a href="/blog/debrief-hebdo-extension-claude">Debrief hebdo automatique avec l'extension Claude : ton rapport client rédigé en 30 secondes</a>
+        </h3>
+        <p class="card-desc">L'extension Claude lit le dashboard Systèmio de ton client, extrait les KPIs et te rédige un debrief prêt à envoyer. En moins de 2 minutes.</p>
+        <a href="/blog/debrief-hebdo-extension-claude" class="card-link">Lire l'article →</a>
+      </article>
+
+      <article class="card">
+        <span class="card-tag">Prompts IA</span>
+        <h3 class="card-title">
+          <a href="/blog/prompt-photos-realistes-gemini">10 photos IA réalistes avec Gemini : le prompt qui les génère toutes</a>
+        </h3>
+        <p class="card-desc">Génère 10 photos réalistes de la même personne dans 10 décors différents — même visage, mêmes couleurs, ambiances totalement différentes.</p>
+        <a href="/blog/prompt-photos-realistes-gemini" class="card-link">Lire l'article →</a>
+      </article>
+
+      <article class="card">
+        <span class="card-tag">Prompts IA</span>
+        <h3 class="card-title">
+          <a href="/blog/photo-pro-ia-prompt">Ta photo de profil pro en version studio : le prompt à coller dans ton IA</a>
+        </h3>
+        <p class="card-desc">Ce prompt transforme n'importe quelle photo en portrait de studio professionnel. À coller dans ChatGPT ou Gemini avec ta photo.</p>
+        <a href="/blog/photo-pro-ia-prompt" class="card-link">Lire l'article →</a>
+      </article>
+
+      <article class="card">
+        <span class="card-tag">IA pour les réseaux sociaux</span>
+        <h3 class="card-title">
+          <a href="/blog/6-prompts-community-management-ia">Les 6 prompts qui remplacent ton community manager</a>
+        </h3>
+        <p class="card-desc">Stratégie, calendrier 30 jours, accroches virales, engagement : 6 prompts complets pour gérer tes réseaux sans CM. Prêts à copier.</p>
+        <a href="/blog/6-prompts-community-management-ia" class="card-link">Lire l'article →</a>
+      </article>
+
+      <article class="card">
+        <span class="card-tag">Prompts IA</span>
+        <h3 class="card-title">
+          <a href="/blog/prompt-audit-malt">Fais auditer ton profil Malt par Claude : le prompt sans complaisance</a>
+        </h3>
+        <p class="card-desc">Claude lit ton profil Malt comme une cliente sceptique et identifie les failles qui font fuir — avec des reformulations prêtes à copier-coller.</p>
+        <a href="/blog/prompt-audit-malt" class="card-link">Lire l'article →</a>
+      </article>
+
+      <article class="card">
+        <span class="card-tag">Prompts IA</span>
+        <h3 class="card-title">
+          <a href="/blog/prompt-plan-professionnel-3-ans">Construis ton plan professionnel à 3 ans avec ce prompt IA</a>
+        </h3>
+        <p class="card-desc">Jalons annuels, objectifs trimestriels, un seul indicateur mensuel et des plans B intégrés. Simple, actionnable, sans tableau de bord.</p>
+        <a href="/blog/prompt-plan-professionnel-3-ans" class="card-link">Lire l'article →</a>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ==================== CTA BAS DE PAGE ==================== -->
+<section class="footer-cta">
+  <div class="footer-cta-inner">
+    <span class="footer-cta-emoji" aria-hidden="true">🧚‍♀️</span>
+    <h2>Reçois le catalogue des services IA prêts à vendre</h2>
+    <p>
+      Des usages concrets, une méthode qui marche et des services
+      que tu peux proposer dès maintenant.
+    </p>
+    <a href="https://www.fees-de-lia.com/catalogue"
+       class="btn btn-primary"
+       target="_blank"
+       rel="noopener">
+      Recevoir le catalogue gratuit
+    </a>
+  </div>
+</section>
+
+<!-- ==================== FOOTER ==================== -->
+<footer class="site-footer">
+  <p class="footer-brand">LES FÉES DE L'IA</p>
+  <p class="footer-copy">&copy; 2026 LES FÉES DE L'IA. Tous droits réservés.</p>
+</footer>
+
 </body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crée ton avatar IA en 5 minutes avec ce prompt</title>
+  <meta name="description" content="Un prompt simple pour générer ton avatar IA professionnel. Fini les photos ternes : habille ta présence en ligne avec l'IA.">
+  <meta property="og:title" content="Crée ton avatar IA en 5 minutes avec ce prompt">
+  <meta property="og:description" content="Un prompt simple pour générer ton avatar IA professionnel. Fini les photos ternes : habille ta présence en ligne avec l'IA.">
+  <meta property="og:image" content="/blog/images/image-avatar-mini-toi.png">
+  <meta property="og:type" content="article">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chau+Philomene+One&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    .article-page-main { padding-top: 90px; padding-bottom: 40px; }
+  </style>
+</head>
+<body>
+
+<header class="nav-bar">
+  <div class="nav-inner">
+    <a href="/" class="logo">LES FÉES DE L'IA <span aria-hidden="true">✨</span></a>
+    <nav aria-label="Navigation principale">
+      <ul class="nav-links">
+        <li><a href="/#articles">Blog</a></li>
+        <li>
+          <a href="https://www.fees-de-lia.com/catalogue"
+             class="nav-btn"
+             target="_blank"
+             rel="noopener">
+            Catalogue gratuit
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="article-page-main">
+<article class="fdia-article">
+<style>
+  .fdia-article{
+    --corail:#d25050;--rose:#F5E8EF;--slate:#3d4a55;--gris:#8a8f96;--blanc:#ffffff;
+    font-family:'Poppins','Inter',Arial,sans-serif;color:var(--slate);line-height:1.7;
+    max-width:720px;margin:0 auto;padding:0 16px 60px;
+  }
+  .fdia-article *{box-sizing:border-box}
+  .fdia-article .tag{display:inline-block;background:var(--corail);color:#fff;font-size:12px;
+    font-weight:700;letter-spacing:.5px;text-transform:uppercase;padding:5px 14px;
+    border-radius:50px;margin-bottom:16px}
+  .fdia-article h1{font-family:'Chau Philomene One','Poppins',Arial,sans-serif;font-size:34px;
+    line-height:1.2;color:var(--slate);margin:0 0 14px;position:relative}
+  .fdia-article .intro-meta{font-size:14px;color:var(--gris);margin-bottom:28px}
+  .fdia-article .chapo{font-size:19px;color:var(--slate);background:var(--rose);border-radius:16px;
+    padding:22px 24px;margin-bottom:36px}
+  .fdia-article h2{font-family:'Chau Philomene One','Poppins',Arial,sans-serif;font-size:24px;
+    color:var(--slate);margin:44px 0 16px}
+  .fdia-article h3{font-family:'Chau Philomene One','Poppins',Arial,sans-serif;font-size:19px;
+    color:var(--corail);margin:26px 0 10px}
+  .fdia-article p{margin:0 0 16px;font-size:16px}
+  .fdia-article strong{color:var(--slate)}
+  .fdia-article .def{font-weight:700}
+  .fdia-article ul{margin:0 0 20px;padding-left:20px}
+  .fdia-article li{margin-bottom:8px;font-size:16px}
+  .fdia-article a{color:var(--corail);text-decoration:underline}
+  .fdia-article .tablewrap{overflow-x:auto;border-radius:16px;
+    box-shadow:0 8px 24px rgba(61,74,85,.08);margin:24px 0 32px}
+  .fdia-article table{width:100%;border-collapse:collapse;background:#fff;min-width:520px}
+  .fdia-article th,.fdia-article td{padding:13px 16px;text-align:left;
+    border-bottom:1px solid var(--rose);font-size:15px}
+  .fdia-article thead th{background:var(--slate);color:#fff}
+  .fdia-article tbody th{font-weight:700;color:var(--corail);background:var(--rose)}
+  .fdia-article .faq-item{border-bottom:1px solid var(--rose);padding:18px 0}
+  .fdia-article .faq-q{font-weight:700;color:var(--slate);margin-bottom:8px;font-size:16px}
+  .fdia-article .cta{background:var(--corail);color:#fff;border-radius:20px;
+    padding:32px 28px;text-align:center;margin:44px 0;position:relative;overflow:hidden}
+  .fdia-article .cta h3{color:#fff;margin-top:0}
+  .fdia-article .cta a.btn{display:inline-block;background:#fff;color:var(--corail);
+    font-weight:700;padding:12px 26px;border-radius:50px;text-decoration:none;margin-top:8px}
+  .fdia-article .source-note{font-size:13px;color:var(--gris);margin-top:40px;
+    border-top:1px solid var(--rose);padding-top:16px}
+  .fdia-article .prompt-box{background:var(--rose);border-left:4px solid var(--corail);
+    border-radius:0 12px 12px 0;padding:18px 22px;margin:24px 0;font-family:monospace;
+    font-size:15px;line-height:1.6;color:var(--slate)}
+  .fdia-article .spk{position:absolute;font-size:18px;pointer-events:none;opacity:.85;
+    animation:fdiaFloat 3.4s ease-in-out infinite}
+  .fdia-article .spk.s1{top:-14px;left:-6px}
+  .fdia-article .spk.s2{top:-6px;right:-4px;font-size:14px;animation-delay:.8s}
+  .fdia-article .spk.s3{bottom:-10px;left:40%;font-size:13px;animation-delay:1.6s}
+  @keyframes fdiaFloat{0%,100%{transform:translateY(0) rotate(0);opacity:.5}
+    50%{transform:translateY(-7px) rotate(12deg);opacity:1}}
+  .fdia-article .chapo{animation:fdiaFade .7s ease both}
+  .fdia-article h2{animation:fdiaFade .6s ease both}
+  @keyframes fdiaFade{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+  .fdia-article .cta a.btn{animation:fdiaPulse 2s ease-in-out infinite}
+  @keyframes fdiaPulse{0%,100%{transform:scale(1);box-shadow:0 0 0 0 rgba(255,255,255,.5)}
+    50%{transform:scale(1.05);box-shadow:0 0 0 12px rgba(255,255,255,0)}}
+  .fdia-article .cta .spk{color:#fff;opacity:.9}
+  .fdia-article .cta .c1{top:14px;left:18px}
+  .fdia-article .cta .c2{top:22px;right:22px;font-size:15px}
+  .fdia-article .cta .c3{bottom:16px;left:30%;font-size:13px}
+  @media(prefers-reduced-motion:reduce){
+    .fdia-article .spk,.fdia-article .chapo,.fdia-article h2,
+    .fdia-article .cta a.btn{animation:none}
+  }
+</style>
+
+  <span class="tag">Prompts IA</span>
+  <h1>
+    Crée ton avatar IA en quelques minutes : le prompt qui change ta présence en ligne
+    <span class="spk s1" aria-hidden="true">✨</span>
+    <span class="spk s2" aria-hidden="true">🧚‍♀️</span>
+    <span class="spk s3" aria-hidden="true">✨</span>
+  </h1>
+  <p class="intro-meta">Mis à jour en juillet 2026 · Lecture : 5 minutes</p>
+
+  <p class="chapo">
+    Tu peux utiliser un prompt d'image pour générer une version IA de toi : une photo de profil pro, un visuel cohérent pour tes réseaux, ou une illustration qui te représente sans session photo. Voici le prompt de base à adapter avec tes propres infos.
+  </p>
+
+  <h2>Pourquoi ton avatar en ligne compte (même en 2026)</h2>
+  <p>Ta photo de profil est souvent la première chose qu'un client potentiel voit. Avant de lire ce que tu proposes, il voit ta tête. Et si ta photo date de 2019 ou vient d'un selfie mal cadré, elle envoie un signal que tu ne veux pas envoyer.</p>
+  <p>L'IA te permet aujourd'hui de générer des visuels professionnels, cohérents avec ta charte, sans payer un photographe ou poser 3 heures pour une séance. Et avec le bon prompt, tu obtiens quelque chose d'utilisable en quelques minutes.</p>
+  <p>Ce n'est pas pour remplacer une vraie photo de toi. C'est pour avoir une option cohérente quand tu en as besoin vite, ou pour compléter ta présence visuelle sur des plateformes où tu n'as pas encore de contenu photo.</p>
+
+  <h2>Ce qu'un avatar IA peut faire pour toi</h2>
+  <p>
+    <span class="def">Un avatar IA est une représentation générée par intelligence artificielle qui reprend ton style, ta charte visuelle et ton positionnement professionnel.</span>
+    Selon le niveau d'utilisation, ça peut aller d'une simple illustration à un vrai jumeau numérique capable de parler et de filmer à ta place.
+  </p>
+  <p><strong>Exemple concret :</strong> tu veux un visuel pour ton profil LinkedIn cohérent avec ta palette corail/rose. Tu n'as pas de photo récente en tenue professionnelle. Avec un prompt adapté, tu génères en moins de 5 minutes une illustration qui te ressemble, dans tes couleurs, avec le bon fond.</p>
+
+  <h2>Le tableau récapitulatif</h2>
+  <div class="tablewrap">
+    <table>
+      <thead>
+        <tr><th>Usage</th><th>Niveau de complexité</th><th>Résultat possible avec l'IA</th></tr>
+      </thead>
+      <tbody>
+        <tr><th>Photo de profil illustrée</th><td>Facile</td><td>Illustration stylisée à partir d'une description</td></tr>
+        <tr><th>Visuel cohérent pour plusieurs réseaux</th><td>Facile</td><td>Série d'images dans la même charte</td></tr>
+        <tr><th>Avatar animé (vidéo courte)</th><td>Intermédiaire</td><td>Avatar qui parle, bouche synchronisée</td></tr>
+        <tr><th>Jumeau numérique complet</th><td>Avancé</td><td>Clone vidéo + voix pour créer du contenu en continu</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Le prompt de base à adapter à ta situation</h2>
+  <p>Voici un prompt à utiliser dans un outil de génération d'image (Gemini, ChatGPT + DALL-E, Adobe Firefly, etc.). Remplace les éléments entre crochets par tes infos :</p>
+
+  <div class="prompt-box">
+Portrait professionnel illustré d'une femme [description physique brève : ex. cheveux courts bruns, sourire chaleureux], style semi-réaliste, fond [couleur de ta charte ou description], tenue [ex. veste structurée corail ou couleur de ta marque], lumière douce, ambiance [ex. moderne et bienveillante / dynamique et créative], format portrait vertical, qualité haute définition, pas de texte dans l'image.
+  </div>
+
+  <p>Ce prompt donne une illustration utilisable comme photo de profil ou visuel de couverture. Tu peux générer 4-5 variantes, choisir celle qui te ressemble le plus et la télécharger.</p>
+
+  <p><strong>Ce que ce prompt ne fait pas</strong> : il ne crée pas de vidéo, il ne clone pas ta voix, il ne génère pas de contenu à ta place en continu. Pour aller aussi loin, c'est une autre méthode, plus technique.</p>
+
+  <h2>Questions fréquentes</h2>
+  <div class="faq-item">
+    <div class="faq-q">Est-ce que l'avatar IA ressemble vraiment à moi ?</div>
+    <p>Avec un prompt basique, l'image est une illustration stylisée, pas une photo réaliste de toi. Pour un résultat qui te ressemble vraiment (traits du visage, expressions), il faut une méthode plus poussée qui part d'une vraie photo de toi comme référence.</p>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Quel outil utiliser pour générer un avatar IA ?</div>
+    <p>Gemini (Google) et ChatGPT avec DALL-E sont les plus accessibles si tu as déjà un compte. Adobe Firefly est une bonne option si tu travailles dans les outils Adobe. Tous acceptent des prompts en français.</p>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Peut-on utiliser un avatar IA pour faire des vidéos à sa place ?</div>
+    <p>Oui, c'est possible avec les outils de "jumeau numérique" : un avatar vidéo synchronisé avec une voix clonée peut filmer des Reels ou des tutoriels à ta place, sans que tu sois devant la caméra. C'est une méthode à part entière qui demande un paramétrage spécifique.</p>
+  </div>
+
+  <div class="cta">
+    <span class="spk c1" aria-hidden="true">✨</span>
+    <span class="spk c2" aria-hidden="true">✨</span>
+    <span class="spk c3" aria-hidden="true">✨</span>
+    <h3>Va beaucoup plus loin avec ton jumeau numérique IA</h3>
+    <p>Crée ton avatar vidéo, clone ta voix et génère du contenu en continu sans te mettre devant la caméra.</p>
+    <a class="btn" href="https://www.fees-de-lia.com/atelier-2"
+       target="_blank" rel="noopener">
+      Découvrir l'Atelier Jumeau Numérique
+    </a>
+  </div>
+
+  <p class="source-note">
+    Informations vérifiées en juillet 2026. Les outils IA évoluent rapidement, les fonctionnalités mentionnées peuvent évoluer.
+  </p>
+
+</article>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Est-ce que l'avatar IA ressemble vraiment à moi ?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Avec un prompt basique, l'image est une illustration stylisée, pas une photo réaliste de toi. Pour un résultat qui te ressemble vraiment (traits du visage, expressions), il faut une méthode plus poussée qui part d'une vraie photo de toi comme référence." }
+    },
+    {
+      "@type": "Question",
+      "name": "Quel outil utiliser pour générer un avatar IA ?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Gemini (Google) et ChatGPT avec DALL-E sont les plus accessibles si tu as déjà un compte. Adobe Firefly est une bonne option si tu travailles dans les outils Adobe. Tous acceptent des prompts en français." }
+    },
+    {
+      "@type": "Question",
+      "name": "Peut-on utiliser un avatar IA pour faire des vidéos à sa place ?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Oui, c'est possible avec les outils de 'jumeau numérique' : un avatar vidéo synchronisé avec une voix clonée peut filmer des Reels ou des tutoriels à ta place, sans que tu sois devant la caméra. C'est une méthode à part entière qui demande un paramétrage spécifique." }
+    }
+  ]
+}
+</script>
+</main>
+
+<footer class="site-footer">
+  <p class="footer-brand">LES FÉES DE L'IA</p>
+  <p class="footer-copy">&copy; 2026 LES FÉES DE L'IA. Tous droits réservés.</p>
+</footer>
+
+</body>
+</html>
