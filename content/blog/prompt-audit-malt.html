@@ -1,0 +1,171 @@
+<article class="fdia-article">
+<style>
+  .fdia-article{
+    --corail:#d25050;--rose:#F5E8EF;--slate:#3d4a55;--gris:#8a8f96;--blanc:#ffffff;
+    font-family:'Poppins','Inter',Arial,sans-serif;color:var(--slate);line-height:1.7;
+    max-width:720px;margin:0 auto;padding:0 16px 60px;
+  }
+  .fdia-article *{box-sizing:border-box}
+  .fdia-article .tag{display:inline-block;background:var(--corail);color:#fff;font-size:12px;
+    font-weight:700;letter-spacing:.5px;text-transform:uppercase;padding:5px 14px;
+    border-radius:50px;margin-bottom:16px}
+  .fdia-article h1{font-family:'Chau Philomene One','Poppins',Arial,sans-serif;font-size:34px;
+    line-height:1.2;color:var(--slate);margin:0 0 14px;position:relative}
+  .fdia-article .intro-meta{font-size:14px;color:var(--gris);margin-bottom:28px}
+  .fdia-article .chapo{font-size:19px;color:var(--slate);background:var(--rose);border-radius:16px;
+    padding:22px 24px;margin-bottom:36px}
+  .fdia-article h2{font-family:'Chau Philomene One','Poppins',Arial,sans-serif;font-size:24px;
+    color:var(--slate);margin:44px 0 16px}
+  .fdia-article h3{font-family:'Chau Philomene One','Poppins',Arial,sans-serif;font-size:19px;
+    color:var(--corail);margin:26px 0 10px}
+  .fdia-article p{margin:0 0 16px;font-size:16px}
+  .fdia-article strong{color:var(--slate)}
+  .fdia-article .def{font-weight:700}
+  .fdia-article ul{margin:0 0 20px;padding-left:20px}
+  .fdia-article li{margin-bottom:8px;font-size:16px}
+  .fdia-article a{color:var(--corail);text-decoration:underline}
+  .fdia-article .faq-item{border-bottom:1px solid var(--rose);padding:18px 0}
+  .fdia-article .faq-q{font-weight:700;color:var(--slate);margin-bottom:8px;font-size:16px}
+  .fdia-article .cta{background:var(--corail);color:#fff;border-radius:20px;
+    padding:32px 28px;text-align:center;margin:44px 0;position:relative;overflow:hidden}
+  .fdia-article .cta h3{color:#fff;margin-top:0}
+  .fdia-article .cta a.btn{display:inline-block;background:#fff;color:var(--corail);
+    font-weight:700;padding:12px 26px;border-radius:50px;text-decoration:none;margin-top:8px}
+  .fdia-article .source-note{font-size:13px;color:var(--gris);margin-top:40px;
+    border-top:1px solid var(--rose);padding-top:16px}
+  .fdia-article .prompt-box{background:var(--rose);border-left:4px solid var(--corail);
+    border-radius:0 12px 12px 0;padding:18px 22px;margin:24px 0;font-size:15px;
+    line-height:1.7;color:var(--slate)}
+  .fdia-article .steps{counter-reset:step;list-style:none;padding-left:0;margin:0 0 24px}
+  .fdia-article .steps li{counter-increment:step;padding:14px 16px 14px 56px;
+    position:relative;border-left:3px solid var(--corail);margin-bottom:12px;
+    background:var(--rose);border-radius:0 12px 12px 0}
+  .fdia-article .steps li::before{content:counter(step);position:absolute;left:-18px;
+    top:50%;transform:translateY(-50%);width:36px;height:36px;background:var(--corail);
+    color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;
+    font-weight:700;font-size:16px;line-height:36px;text-align:center}
+  .fdia-article .spk{position:absolute;font-size:18px;pointer-events:none;opacity:.85;
+    animation:fdiaFloat 3.4s ease-in-out infinite}
+  .fdia-article .spk.s1{top:-14px;left:-6px}
+  .fdia-article .spk.s2{top:-6px;right:-4px;font-size:14px;animation-delay:.8s}
+  .fdia-article .spk.s3{bottom:-10px;left:40%;font-size:13px;animation-delay:1.6s}
+  @keyframes fdiaFloat{0%,100%{transform:translateY(0) rotate(0);opacity:.5}
+    50%{transform:translateY(-7px) rotate(12deg);opacity:1}}
+  .fdia-article .chapo{animation:fdiaFade .7s ease both}
+  .fdia-article h2{animation:fdiaFade .6s ease both}
+  @keyframes fdiaFade{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+  .fdia-article .cta a.btn{animation:fdiaPulse 2s ease-in-out infinite}
+  @keyframes fdiaPulse{0%,100%{transform:scale(1);box-shadow:0 0 0 0 rgba(255,255,255,.5)}
+    50%{transform:scale(1.05);box-shadow:0 0 0 12px rgba(255,255,255,0)}}
+  .fdia-article .cta .spk{color:#fff;opacity:.9}
+  .fdia-article .cta .c1{top:14px;left:18px}
+  .fdia-article .cta .c2{top:22px;right:22px;font-size:15px}
+  .fdia-article .cta .c3{bottom:16px;left:30%;font-size:13px}
+  @media(prefers-reduced-motion:reduce){
+    .fdia-article .spk,.fdia-article .chapo,.fdia-article h2,
+    .fdia-article .cta a.btn{animation:none}
+  }
+</style>
+
+  <span class="tag">Prompts IA</span>
+  <h1>
+    Fais auditer ton profil Malt par Claude : le prompt sans complaisance
+    <span class="spk s1" aria-hidden="true">✨</span>
+    <span class="spk s2" aria-hidden="true">🧚‍♀️</span>
+    <span class="spk s3" aria-hidden="true">✨</span>
+  </h1>
+  <p class="intro-meta">Mis à jour en septembre 2026 · Lecture : 5 minutes</p>
+
+  <p class="chapo">
+    Claude peut lire ton profil Malt et te donner un audit honnête depuis la position d'une cliente sceptique. Ce prompt lui demande d'identifier les failles qui font fuir avant même le premier contact — et de te proposer des reformulations concrètes prêtes à copier-coller.
+  </p>
+
+  <h2>Pourquoi ton profil Malt te coûte peut-être des clientes</h2>
+  <p>Quand une cliente potentielle atterrit sur ton profil Malt, elle ne cherche pas à être convaincue. Elle cherche une raison de passer à la suivante. Une formulation trop vague, une description qui ressemble à celle de tout le monde, l'absence d'un élément de réassurance au bon endroit : et c'est parti, elle est déjà ailleurs.</p>
+  <p>Le problème, c'est qu'on est mauvais juge de son propre profil. On sait ce qu'on voulait dire, on remplit les blancs inconsciemment, et on ne voit plus les failles. Un regard extérieur est indispensable.</p>
+  <p>C'est exactement ce que Claude peut faire : lire ton profil comme le ferait une cliente indécise et te donner un retour structuré, sans ménagement.</p>
+
+  <h2>Ce dont tu as besoin</h2>
+  <p>
+    <span class="def">L'extension Claude dans Chrome est un outil qui permet à Claude de lire la page web actuellement ouverte dans ton navigateur, sans copier-coller. Tu ouvres ton profil Malt, tu lances l'extension, tu colles ton prompt — et Claude analyse ce qu'il voit directement.</span>
+    Il faut un compte Claude Pro pour y accéder (un essai gratuit de 7 jours est disponible si tu n'as pas encore testé).
+  </p>
+
+  <h2>Le mini tuto en 4 étapes</h2>
+  <ol class="steps">
+    <li><strong>Ouvre ton compte Claude Pro.</strong> Un essai gratuit de 7 jours est disponible si tu n'es pas encore abonnée.</li>
+    <li><strong>Installe l'extension Claude depuis le Chrome Web Store.</strong> Recherche "Claude for Chrome" et épingle l'icône dans ta barre d'outils pour y accéder facilement.</li>
+    <li><strong>Ouvre ton profil Malt dans un onglet Chrome.</strong> Navigue jusqu'à la page publique de ton profil, celle qu'une cliente voit quand elle arrive dessus.</li>
+    <li><strong>Clique sur l'icône Claude et colle le prompt ci-dessous.</strong> Claude lit la page et te génère son audit directement.</li>
+  </ol>
+
+  <h2>Le prompt à coller</h2>
+
+  <div class="prompt-box">
+    Tu es une experte en marketing et en positionnement freelance. Ce profil Malt vient de quelqu'un d'autre que moi : analyse-le sans complaisance, comme si tu ne connaissais pas la personne qui l'a écrit. Mets-toi dans la peau d'une cliente sceptique qui hésite entre plusieurs freelances et qui cherche activement des raisons de NE PAS choisir ce profil. Évalue-le objectivement, sans tenir compte de si l'auteur serait d'accord avec la critique : donne les failles en premier.<br><br>
+    Structure ta réponse ainsi :<br>
+    1. Les 3 plus grosses failles qui feraient hésiter une cliente<br>
+    2. Ce qui manque pour convaincre<br>
+    3. Les formulations trop génériques, vues mille fois ailleurs<br>
+    4. Pour chaque point faible, une reformulation concrète, prête à copier-coller
+  </div>
+
+  <h2>Ce que tu obtiens</h2>
+  <p>Claude te sort un retour structuré en 4 parties : les failles principales, ce qui manque, les formulations génériques à éliminer, et pour chaque point, une réécriture concrète que tu peux copier directement dans ton profil.</p>
+  <p>C'est un audit du même niveau que ce que ferait un consultant en personal branding, en 2 minutes et sans frais. Ensuite, tu appliques les modifications phrase par phrase et tu republies ton profil.</p>
+
+  <h2>Questions fréquentes</h2>
+  <div class="faq-item">
+    <div class="faq-q">Est-ce que ça marche uniquement avec Malt ?</div>
+    <p>Non. Ce prompt fonctionne avec n'importe quelle page de présentation lisible dans Chrome : profil LinkedIn, page "À propos" de ton site, bio Instagram, profil Fiverr. L'extension Claude lit le contenu de la page ouverte, peu importe la plateforme.</p>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Claude peut-il voir l'intégralité de mon profil Malt ?</div>
+    <p>Claude voit ce qui est affiché dans ton navigateur quand tu lui parles. Si ton profil est long, fais défiler la page avant de lancer le prompt, ou ouvre l'analyse en plusieurs fois (une partie haute, une partie basse). L'extension lit ce qui est chargé dans le viewport au moment où tu demandes.</p>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Faut-il suivre toutes les suggestions de Claude ?</div>
+    <p>Non. Claude donne des pistes, pas des vérités absolues. Certaines reformulations seront excellentes, d'autres moins adaptées à ta voix. Lis, prends ce qui te parle, ignore ce qui ne colle pas. L'objectif est d'avoir un regard extérieur structuré, pas de tout réécrire comme l'IA.</p>
+  </div>
+
+  <div class="cta">
+    <span class="spk c1" aria-hidden="true">✨</span>
+    <span class="spk c2" aria-hidden="true">✨</span>
+    <span class="spk c3" aria-hidden="true">✨</span>
+    <h3>Reçois le catalogue des services IA prêts à vendre</h3>
+    <p>Des prompts pratiques comme celui-ci + des services que tu peux proposer à tes clients dès maintenant.</p>
+    <a class="btn" href="https://www.fees-de-lia.com/catalogue"
+       target="_blank" rel="noopener">
+      Recevoir le catalogue gratuit
+    </a>
+  </div>
+
+  <p class="source-note">
+    Informations vérifiées en septembre 2026. L'extension Claude est réservée aux comptes Claude Pro — fonctionnalités susceptibles d'évoluer.
+  </p>
+
+</article>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Est-ce que ça marche uniquement avec Malt ?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Non. Ce prompt fonctionne avec n'importe quelle page de présentation lisible dans Chrome : profil LinkedIn, page À propos de ton site, bio Instagram, profil Fiverr. L'extension Claude lit le contenu de la page ouverte, peu importe la plateforme." }
+    },
+    {
+      "@type": "Question",
+      "name": "Claude peut-il voir l'intégralité de mon profil Malt ?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Claude voit ce qui est affiché dans ton navigateur quand tu lui parles. Si ton profil est long, fais défiler la page avant de lancer le prompt, ou ouvre l'analyse en plusieurs fois. L'extension lit ce qui est chargé dans le viewport au moment où tu demandes." }
+    },
+    {
+      "@type": "Question",
+      "name": "Faut-il suivre toutes les suggestions de Claude ?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Non. Claude donne des pistes, pas des vérités absolues. Certaines reformulations seront excellentes, d'autres moins adaptées à ta voix. Lis, prends ce qui te parle, ignore ce qui ne colle pas." }
+    }
+  ]
+}
+</script>

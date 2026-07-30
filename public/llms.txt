@@ -1,0 +1,35 @@
+# LES FÉES DE L'IA — Blog
+
+> Blog de ressources IA pour freelances (assistantes digitales et solopreneurs).
+> Usages IA concrets, prompts, skills et méthodes pour gagner du temps et créer de nouveaux services.
+
+## À propos
+
+LES FÉES DE L'IA aide les freelances à passer de spectatrices à maîtresses de l'IA.
+Le blog propose des articles pédagogiques (prompts, outils, méthodes) et des vitrines de skills IA prêts à vendre.
+
+Autrice : LES FÉES DE L'IA
+Site principal : https://www.fees-de-lia.com
+Blog : https://blog.fees-de-lia.com
+Catalogue services IA : https://www.fees-de-lia.com/catalogue
+
+## Articles
+
+- /blog/prompt-plan-professionnel-3-ans — Construis ton plan professionnel à 3 ans avec ce prompt IA
+- /blog/prompt-audit-malt — Fais auditer ton profil Malt par Claude : le prompt sans complaisance
+- /blog/6-prompts-community-management-ia — Les 6 prompts qui remplacent ton community manager
+- /blog/photo-pro-ia-prompt — Ta photo de profil pro en version studio : le prompt à coller dans ton IA
+- /blog/prompt-photos-realistes-gemini — 10 photos IA réalistes avec Gemini : le prompt qui les génère toutes
+- /blog/debrief-hebdo-extension-claude — Debrief hebdo automatique avec l'extension Claude
+- /blog/suivi-budget-automatique-claude-notion — Suivi budget automatisé avec Claude et Notion
+- /blog/monter-video-avec-claude — Monter ses vidéos avec l'IA : fini les heures devant la timeline
+- /blog/erreur-ia-google — L'IA de Google peut se tromper : comment garder un oeil critique
+- /blog/avatar-ia-prompt — Crée ton avatar IA en quelques minutes : le prompt qui change ta présence en ligne
+
+## Catégories
+
+- Prompts IA : techniques et prompts prêts à copier
+- Gagner du temps avec l'IA : automatisations et skills productivité
+- Comprendre l'IA : culture IA et esprit critique
+- IA pour les réseaux sociaux : community management avec l'IA
+- Créer des services IA : skills vendables aux clients
