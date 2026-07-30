@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monter ses vidéos avec l'IA : fini les heures devant la timeline</title>
+  <meta name="description" content="Ce skill IA coupe, assemble et structure tes vidéos automatiquement. Ce qui prenait 2 à 3 heures se fait en quelques minutes, sans logiciel complexe.">
+  <meta property="og:title" content="Monter ses vidéos avec l'IA : fini les heures devant la timeline">
+  <meta property="og:description" content="Ce skill IA coupe, assemble et structure tes vidéos automatiquement. Ce qui prenait 2 à 3 heures se fait en quelques minutes, sans logiciel complexe.">
+  <meta property="og:image" content="/blog/images/image-monter-video-claude.png">
+  <meta property="og:type" content="article">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chau+Philomene+One&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    .article-page-main { padding-top: 90px; padding-bottom: 40px; }
+  </style>
+</head>
+<body>
+
+<header class="nav-bar">
+  <div class="nav-inner">
+    <a href="/" class="logo">LES FÉES DE L'IA <span aria-hidden="true">✨</span></a>
+    <nav aria-label="Navigation principale">
+      <ul class="nav-links">
+        <li><a href="/#articles">Blog</a></li>
+        <li>
+          <a href="https://www.fees-de-lia.com/catalogue"
+             class="nav-btn"
+             target="_blank"
+             rel="noopener">
+            Catalogue gratuit
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="article-page-main">
+<article class="fdia-article">
+<style>
+  .fdia-article{
+    --corail:#d25050;--rose:#F5E8EF;--slate:#3d4a55;--gris:#8a8f96;--blanc:#ffffff;
+    font-family:'Poppins','Inter',Arial,sans-serif;color:var(--slate);line-height:1.7;
+    max-width:720px;margin:0 auto;padding:0 16px 60px;
+  }
+  .fdia-article *{box-sizing:border-box}
+  .fdia-article .tag{display:inline-block;background:var(--corail);color:#fff;font-size:12px;
+    font-weight:700;letter-spacing:.5px;text-transform:uppercase;padding:5px 14px;
+    border-radius:50px;margin-bottom:16px}
+  .fdia-article h1{font-family:'Chau Philomene One','Poppins',Arial,sans-serif;font-size:34px;
+    line-height:1.2;color:var(--slate);margin:0 0 14px;position:relative}
+  .fdia-article .intro-meta{font-size:14px;color:var(--gris);margin-bottom:28px}
+  .fdia-article .chapo{font-size:19px;color:var(--slate);background:var(--rose);border-radius:16px;
+    padding:22px 24px;margin-bottom:36px}
+  .fdia-article h2{font-family:'Chau Philomene One','Poppins',Arial,sans-serif;font-size:24px;
+    color:var(--slate);margin:44px 0 16px}
+  .fdia-article h3{font-family:'Chau Philomene One','Poppins',Arial,sans-serif;font-size:19px;
+    color:var(--corail);margin:26px 0 10px}
+  .fdia-article p{margin:0 0 16px;font-size:16px}
+  .fdia-article strong{color:var(--slate)}
+  .fdia-article .def{font-weight:700}
+  .fdia-article ul{margin:0 0 20px;padding-left:20px}
+  .fdia-article li{margin-bottom:8px;font-size:16px}
+  .fdia-article a{color:var(--corail);text-decoration:underline}
+  .fdia-article .tablewrap{overflow-x:auto;border-radius:16px;
+    box-shadow:0 8px 24px rgba(61,74,85,.08);margin:24px 0 32px}
+  .fdia-article table{width:100%;border-collapse:collapse;background:#fff;min-width:460px}
+  .fdia-article th,.fdia-article td{padding:13px 16px;text-align:left;
+    border-bottom:1px solid var(--rose);font-size:15px}
+  .fdia-article thead th{background:var(--slate);color:#fff}
+  .fdia-article tbody th{font-weight:700;color:var(--corail);background:var(--rose)}
+  .fdia-article .faq-item{border-bottom:1px solid var(--rose);padding:18px 0}
+  .fdia-article .faq-q{font-weight:700;color:var(--slate);margin-bottom:8px;font-size:16px}
+  .fdia-article .cta{background:var(--corail);color:#fff;border-radius:20px;
+    padding:32px 28px;text-align:center;margin:44px 0;position:relative;overflow:hidden}
+  .fdia-article .cta h3{color:#fff;margin-top:0}
+  .fdia-article .cta a.btn{display:inline-block;background:#fff;color:var(--corail);
+    font-weight:700;padding:12px 26px;border-radius:50px;text-decoration:none;margin-top:8px}
+  .fdia-article .source-note{font-size:13px;color:var(--gris);margin-top:40px;
+    border-top:1px solid var(--rose);padding-top:16px}
+  .fdia-article .result-box{background:var(--rose);border-left:4px solid var(--corail);
+    border-radius:0 12px 12px 0;padding:18px 22px;margin:24px 0;font-size:15px;
+    line-height:1.7;color:var(--slate)}
+  .fdia-article .spk{position:absolute;font-size:18px;pointer-events:none;opacity:.85;
+    animation:fdiaFloat 3.4s ease-in-out infinite}
+  .fdia-article .spk.s1{top:-14px;left:-6px}
+  .fdia-article .spk.s2{top:-6px;right:-4px;font-size:14px;animation-delay:.8s}
+  .fdia-article .spk.s3{bottom:-10px;left:40%;font-size:13px;animation-delay:1.6s}
+  @keyframes fdiaFloat{0%,100%{transform:translateY(0) rotate(0);opacity:.5}
+    50%{transform:translateY(-7px) rotate(12deg);opacity:1}}
+  .fdia-article .chapo{animation:fdiaFade .7s ease both}
+  .fdia-article h2{animation:fdiaFade .6s ease both}
+  @keyframes fdiaFade{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+  .fdia-article .cta a.btn{animation:fdiaPulse 2s ease-in-out infinite}
+  @keyframes fdiaPulse{0%,100%{transform:scale(1);box-shadow:0 0 0 0 rgba(255,255,255,.5)}
+    50%{transform:scale(1.05);box-shadow:0 0 0 12px rgba(255,255,255,0)}}
+  .fdia-article .cta .spk{color:#fff;opacity:.9}
+  .fdia-article .cta .c1{top:14px;left:18px}
+  .fdia-article .cta .c2{top:22px;right:22px;font-size:15px}
+  .fdia-article .cta .c3{bottom:16px;left:30%;font-size:13px}
+  @media(prefers-reduced-motion:reduce){
+    .fdia-article .spk,.fdia-article .chapo,.fdia-article h2,
+    .fdia-article .cta a.btn{animation:none}
+  }
+</style>
+
+  <span class="tag">Gagner du temps avec l'IA</span>
+  <h1>
+    Monter ses vidéos avec l'IA : fini les heures devant la timeline
+    <span class="spk s1" aria-hidden="true">✨</span>
+    <span class="spk s2" aria-hidden="true">🧚‍♀️</span>
+    <span class="spk s3" aria-hidden="true">✨</span>
+  </h1>
+  <p class="intro-meta">Mis à jour en juillet 2026 · Lecture : 4 minutes</p>
+
+  <p class="chapo">
+    Ce skill IA prend tes rushs et tes enregistrements, coupe aux bons endroits, assemble les clips et te livre une vidéo structurée — sans que tu touches à un logiciel de montage. Ce qui prenait 2 à 3 heures se fait en quelques minutes.
+  </p>
+
+  <h2>Le montage vidéo : la tâche que tout le monde repousse</h2>
+  <p>Tu as enregistré un tutoriel, un webinaire, une formation. Le contenu est là. Mais le montage ? C'est l'étape qui traîne des jours dans ta to-do list. Couper les silences, enlever les bégaiements, assembler les parties dans le bon ordre, ajouter des transitions — c'est long, répétitif, et ça ne demande aucune créativité.</p>
+  <p>C'est exactement le type de tâche que l'IA gère mieux que toi. Pas parce qu'elle a du goût, mais parce qu'elle est précise, rapide, et qu'elle ne se lasse pas.</p>
+  <p><span class="def">Le skill montage vidéo de LES FÉES DE L'IA est un outil clé en main qui transforme tes enregistrements bruts en vidéos montées — à partir de simples instructions, sans logiciel complexe à apprendre.</span></p>
+
+  <h2>Ce que tu obtiens concrètement</h2>
+  <p>Tu fournis ton enregistrement (ou ta transcription) et tu décris ce que tu veux garder. Le skill s'occupe du reste :</p>
+  <ul>
+    <li>Coupes aux moments exacts que tu indiques</li>
+    <li>Assemblage de plusieurs prises ou clips en une vidéo fluide</li>
+    <li>Transitions entre les séquences</li>
+    <li>Résumé vidéo généré depuis un long enregistrement — idéal pour transformer un webinaire d'1h en extrait de 10 minutes</li>
+  </ul>
+
+  <div class="result-box">
+    Résultat typique : une vidéo YouTube de 15 minutes, propre et montée, prête à publier — en moins de 10 minutes de travail de ta part.
+  </div>
+
+  <h2>Pour qui c'est fait</h2>
+  <div class="tablewrap">
+    <table>
+      <thead>
+        <tr><th>Profil</th><th>Ce que ça change</th></tr>
+      </thead>
+      <tbody>
+        <tr><th>Assistante digitale</th><td>Tu livres les vidéos de tes clients sans passer des heures en montage</td></tr>
+        <tr><th>Créatrice de formation</th><td>Tes modules vidéo sont montés dès que tu as enregistré</td></tr>
+        <tr><th>Content creator</th><td>Tu extrais des clips courts depuis tes longs formats en quelques minutes</td></tr>
+        <tr><th>Freelance tout terrain</th><td>Tu ajoutes le montage vidéo à tes services sans compétence technique préalable</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Ce que tu n'as pas besoin de savoir faire</h2>
+  <p>Aucune connaissance en montage vidéo requise. Pas besoin de maîtriser Premiere Pro, DaVinci Resolve ou CapCut. Pas besoin de comprendre les formats de fichiers ou les codecs. Tu décris ce que tu veux — la vidéo arrive.</p>
+  <p>Ce skill est pensé pour les freelances qui veulent livrer du contenu vidéo à leurs clients (ou pour elles-mêmes) sans passer une journée à apprendre un logiciel.</p>
+
+  <h2>Questions fréquentes</h2>
+  <div class="faq-item">
+    <div class="faq-q">Faut-il des compétences techniques pour utiliser ce skill ?</div>
+    <p>Non. Tu n'as pas besoin de savoir coder, ni de connaître le moindre logiciel de montage. Tu décris ce que tu veux obtenir — le skill s'occupe de la partie technique. Si tu sais écrire une instruction claire, tu sais utiliser ce skill.</p>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Quels types de vidéos peut-on monter avec ce skill ?</div>
+    <p>Tutoriels YouTube, modules de formation, extraits de webinaires, vidéos de présentation, témoignages clients, contenus réseaux sociaux — tout enregistrement que tu veux structurer, couper ou assembler. Dès qu'il y a une vidéo brute à transformer en vidéo montée, ce skill est pertinent.</p>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Est-ce qu'on peut proposer ce service à ses clients ?</div>
+    <p>Oui, c'est même l'une des utilisations les plus rentables. Le montage vidéo est une prestation que beaucoup de freelances refusent faute de compétences — ou qu'elles sous-traitent à prix élevé. Avec ce skill, tu peux l'intégrer à ton offre et la facturer à ta valeur, sans y passer des heures.</p>
+  </div>
+
+  <div class="cta">
+    <span class="spk c1" aria-hidden="true">✨</span>
+    <span class="spk c2" aria-hidden="true">✨</span>
+    <span class="spk c3" aria-hidden="true">✨</span>
+    <h3>Obtenir le skill montage vidéo</h3>
+    <p>Tes rushs entrent, une vidéo montée sort. Sans logiciel, sans formation, sans heures perdues.</p>
+    <a class="btn" href="https://www.fees-de-lia.com/skillmontagevideo"
+       target="_blank" rel="noopener">
+      Obtenir le skill
+    </a>
+  </div>
+
+  <p class="source-note">
+    Juillet 2026 — LES FÉES DE L'IA. Résultats variables selon la qualité des enregistrements fournis.
+  </p>
+
+</article>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Faut-il des compétences techniques pour utiliser ce skill ?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Non. Tu n'as pas besoin de savoir coder, ni de connaître le moindre logiciel de montage. Tu décris ce que tu veux obtenir — le skill s'occupe de la partie technique." }
+    },
+    {
+      "@type": "Question",
+      "name": "Quels types de vidéos peut-on monter avec ce skill ?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Tutoriels YouTube, modules de formation, extraits de webinaires, vidéos de présentation, témoignages clients, contenus réseaux sociaux — tout enregistrement que tu veux structurer, couper ou assembler." }
+    },
+    {
+      "@type": "Question",
+      "name": "Est-ce qu'on peut proposer ce service à ses clients ?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Oui. Avec ce skill, tu peux intégrer le montage vidéo à ton offre et le facturer à ta valeur, sans y passer des heures." }
+    }
+  ]
+}
+</script>
+</main>
+
+<footer class="site-footer">
+  <p class="footer-brand">LES FÉES DE L'IA</p>
+  <p class="footer-copy">&copy; 2026 LES FÉES DE L'IA. Tous droits réservés.</p>
+</footer>
+
+</body>
+</html>

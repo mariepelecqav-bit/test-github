@@ -79,6 +79,7 @@ La base Notion "Contenus Fées de l'IA" sert de calendrier. Les dates de publica
 | 6-prompts-community-management-ia | IA pour les réseaux sociaux | 2026-09-02 |
 | prompt-audit-malt | Prompts IA | 2026-09-09 |
 | prompt-plan-professionnel-3-ans | Prompts IA | 2026-09-16 |
+| monter-video-avec-claude | Gagner du temps avec l'IA | 2026-07-29 |
 
 ## Skill disponible
 

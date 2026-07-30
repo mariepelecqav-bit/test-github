@@ -79,6 +79,14 @@ const articles = [
     image: 'image-plan-3-ans.png',
     date: '2026-09-16',
   },
+  {
+    slug: 'monter-video-avec-claude',
+    fragment: 'blog-monter-video-claude.html',
+    title: "Monter ses vidéos avec l'IA : fini les heures devant la timeline",
+    desc: "Ce skill IA coupe, assemble et structure tes vidéos automatiquement. Ce qui prenait 2 à 3 heures se fait en quelques minutes, sans logiciel complexe.",
+    image: 'image-monter-video-claude.png',
+    date: '2026-07-29',
+  },
 ];
 
 function pageTemplate(article, fragmentContent) {
