@@ -1,0 +1,182 @@
+<article class="fdia-article">
+<style>
+  .fdia-article{
+    --corail:#d25050;--rose:#F5E8EF;--slate:#3d4a55;--gris:#8a8f96;--blanc:#ffffff;
+    font-family:'Poppins','Inter',Arial,sans-serif;color:var(--slate);line-height:1.7;
+    max-width:720px;margin:0 auto;padding:0 16px 60px;
+  }
+  .fdia-article *{box-sizing:border-box}
+  .fdia-article .tag{display:inline-block;background:var(--corail);color:#fff;font-size:12px;
+    font-weight:700;letter-spacing:.5px;text-transform:uppercase;padding:5px 14px;
+    border-radius:50px;margin-bottom:16px}
+  .fdia-article h1{font-family:'Chau Philomene One','Poppins',Arial,sans-serif;font-size:34px;
+    line-height:1.2;color:var(--slate);margin:0 0 14px;position:relative}
+  .fdia-article .intro-meta{font-size:14px;color:var(--gris);margin-bottom:28px}
+  .fdia-article .chapo{font-size:19px;color:var(--slate);background:var(--rose);border-radius:16px;
+    padding:22px 24px;margin-bottom:36px}
+  .fdia-article h2{font-family:'Chau Philomene One','Poppins',Arial,sans-serif;font-size:24px;
+    color:var(--slate);margin:44px 0 16px}
+  .fdia-article h3{font-family:'Chau Philomene One','Poppins',Arial,sans-serif;font-size:19px;
+    color:var(--corail);margin:26px 0 10px}
+  .fdia-article p{margin:0 0 16px;font-size:16px}
+  .fdia-article strong{color:var(--slate)}
+  .fdia-article .def{font-weight:700}
+  .fdia-article ul,.fdia-article ol{margin:0 0 20px;padding-left:20px}
+  .fdia-article li{margin-bottom:8px;font-size:16px}
+  .fdia-article a{color:var(--corail);text-decoration:underline}
+  .fdia-article .tablewrap{overflow-x:auto;border-radius:16px;
+    box-shadow:0 8px 24px rgba(61,74,85,.08);margin:24px 0 32px}
+  .fdia-article table{width:100%;border-collapse:collapse;background:#fff;min-width:520px}
+  .fdia-article th,.fdia-article td{padding:13px 16px;text-align:left;
+    border-bottom:1px solid var(--rose);font-size:15px}
+  .fdia-article thead th{background:var(--slate);color:#fff}
+  .fdia-article tbody th{font-weight:700;color:var(--corail);background:var(--rose)}
+  .fdia-article .faq-item{border-bottom:1px solid var(--rose);padding:18px 0}
+  .fdia-article .faq-q{font-weight:700;color:var(--slate);margin-bottom:8px;font-size:16px}
+  .fdia-article .cta{background:var(--corail);color:#fff;border-radius:20px;
+    padding:32px 28px;text-align:center;margin:44px 0;position:relative;overflow:hidden}
+  .fdia-article .cta h3{color:#fff;margin-top:0}
+  .fdia-article .cta a.btn{display:inline-block;background:#fff;color:var(--corail);
+    font-weight:700;padding:12px 26px;border-radius:50px;text-decoration:none;margin-top:8px}
+  .fdia-article .source-note{font-size:13px;color:var(--gris);margin-top:40px;
+    border-top:1px solid var(--rose);padding-top:16px}
+  .fdia-article .steps{counter-reset:step;list-style:none;padding-left:0;margin:0 0 24px}
+  .fdia-article .steps li{counter-increment:step;padding:14px 16px 14px 56px;
+    position:relative;border-left:3px solid var(--corail);margin-bottom:12px;
+    background:var(--rose);border-radius:0 12px 12px 0}
+  .fdia-article .steps li::before{content:counter(step);position:absolute;left:-18px;
+    top:50%;transform:translateY(-50%);width:36px;height:36px;background:var(--corail);
+    color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;
+    font-weight:700;font-size:16px;line-height:36px;text-align:center}
+  .fdia-article .spk{position:absolute;font-size:18px;pointer-events:none;opacity:.85;
+    animation:fdiaFloat 3.4s ease-in-out infinite}
+  .fdia-article .spk.s1{top:-14px;left:-6px}
+  .fdia-article .spk.s2{top:-6px;right:-4px;font-size:14px;animation-delay:.8s}
+  .fdia-article .spk.s3{bottom:-10px;left:40%;font-size:13px;animation-delay:1.6s}
+  @keyframes fdiaFloat{0%,100%{transform:translateY(0) rotate(0);opacity:.5}
+    50%{transform:translateY(-7px) rotate(12deg);opacity:1}}
+  .fdia-article .chapo{animation:fdiaFade .7s ease both}
+  .fdia-article h2{animation:fdiaFade .6s ease both}
+  @keyframes fdiaFade{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+  .fdia-article .cta a.btn{animation:fdiaPulse 2s ease-in-out infinite}
+  @keyframes fdiaPulse{0%,100%{transform:scale(1);box-shadow:0 0 0 0 rgba(255,255,255,.5)}
+    50%{transform:scale(1.05);box-shadow:0 0 0 12px rgba(255,255,255,0)}}
+  .fdia-article .cta .spk{color:#fff;opacity:.9}
+  .fdia-article .cta .c1{top:14px;left:18px}
+  .fdia-article .cta .c2{top:22px;right:22px;font-size:15px}
+  .fdia-article .cta .c3{bottom:16px;left:30%;font-size:13px}
+  @media(prefers-reduced-motion:reduce){
+    .fdia-article .spk,.fdia-article .chapo,.fdia-article h2,
+    .fdia-article .cta a.btn{animation:none}
+  }
+</style>
+
+  <span class="tag">Gagner du temps avec l'IA</span>
+  <h1>
+    Suivi budget automatisé avec Claude et Notion : fini la saisie manuelle
+    <span class="spk s1" aria-hidden="true">✨</span>
+    <span class="spk s2" aria-hidden="true">🧚‍♀️</span>
+    <span class="spk s3" aria-hidden="true">✨</span>
+  </h1>
+  <p class="intro-meta">Mis à jour en juillet 2026 · Lecture : 5 minutes</p>
+
+  <p class="chapo">
+    Claude peut surveiller tes emails de paiement Systèmio, extraire chaque transaction et remplir automatiquement une base Notion. Résultat : tu as un suivi de ton chiffre d'affaires en temps réel, sans jamais copier-coller un seul chiffre.
+  </p>
+
+  <h2>Le problème que presque toutes les freelances ignorent</h2>
+  <p>Tu reçois un email de confirmation de paiement sur Systèmio. Tu l'ouvres, tu notes le montant quelque part (ou tu te dis que tu le feras plus tard). Deux semaines après, tu essaies de calculer ton chiffre du mois et tu passes 45 minutes à retrouver tes emails un par un.</p>
+  <p>Ce n'est pas un problème de discipline. C'est un problème de système. La saisie manuelle est répétitive, fastidieuse et elle finit toujours par être abandonnée. Et sans suivi de tes revenus en temps réel, tu prends tes décisions business un peu à l'aveugle.</p>
+  <p>C'est exactement le genre de tâche que l'IA peut prendre en charge à ta place.</p>
+
+  <h2>Comment Claude automatise ton suivi budget</h2>
+  <p>
+    <span class="def">L'automatisation consiste à connecter Claude à ta boite mail et à ta base Notion pour qu'il détecte, extrait et enregistre chaque paiement reçu sans que tu aies à intervenir.</span>
+    Le principe est simple : Claude lit les emails de confirmation de paiement, en extrait les informations clés (montant, date, client, produit), et ajoute une ligne dans ta base Notion de suivi des revenus.
+  </p>
+  <p><strong>Exemple concret :</strong> tu vends un atelier à 67€ sur Systèmio. Quelques secondes après la confirmation, une nouvelle ligne apparaît automatiquement dans ton tracker Notion avec le montant, la date et le nom du produit. Tu n'as rien fait.</p>
+
+  <h2>Le setup en 3 étapes</h2>
+  <ol class="steps">
+    <li><strong>Claude surveille tes emails Systèmio.</strong> Avec l'accès à ta messagerie, Claude identifie les emails de confirmation de paiement entrants et les distingue du reste de tes emails.</li>
+    <li><strong>Chaque transaction est extraite et structurée.</strong> Montant, date, nom du produit, type de paiement : Claude lit l'email et formate les données proprement.</li>
+    <li><strong>La ligne est ajoutée automatiquement à ta base Notion.</strong> Ton tableau de suivi se remplit en temps réel. Plus aucune saisie manuelle, plus aucun oubli.</li>
+  </ol>
+
+  <h2>Ce que tu peux faire avec ce dashboard</h2>
+  <div class="tablewrap">
+    <table>
+      <thead>
+        <tr><th>Besoin</th><th>Sans automatisation</th><th>Avec Claude + Notion</th></tr>
+      </thead>
+      <tbody>
+        <tr><th>Connaître son CA du mois</th><td>Retourner dans les emails un par un</td><td>Visible en temps réel dans Notion</td></tr>
+        <tr><th>Analyser ses produits qui vendent</th><td>Tableau Excel fait à la main</td><td>Données déjà structurées, filtrables</td></tr>
+        <tr><th>Préparer sa compta</th><td>Ressaisir les infos pour le comptable</td><td>Export direct depuis Notion</td></tr>
+        <tr><th>Fixer ses objectifs mensuels</th><td>Estimation approximative</td><td>Données réelles comme point de départ</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Par quoi commencer si tu veux mettre ça en place ?</h2>
+  <ul>
+    <li><strong>Tu utilises Systèmio et tu as Claude Pro.</strong> C'est la combinaison idéale. Claude peut accéder à ta messagerie via les connecteurs disponibles dans ton espace Claude.</li>
+    <li><strong>Tu veux une base Notion clé en main.</strong> Crée une base avec les colonnes Date, Montant, Produit, Client, Statut. C'est le minimum pour que les données soient utiles.</li>
+    <li><strong>Tu veux que ça soit 100% automatique.</strong> Demande à Claude de créer une routine qui se déclenche à chaque nouvel email de paiement, sans que tu aies à la lancer manuellement.</li>
+  </ul>
+
+  <h2>Questions fréquentes</h2>
+  <div class="faq-item">
+    <div class="faq-q">Faut-il un compte Claude payant pour faire ça ?</div>
+    <p>Oui, il faut un compte Claude Pro pour accéder aux connecteurs qui permettent à Claude de lire tes emails et d'écrire dans Notion. L'abonnement mensuel est rentabilisé rapidement quand tu considères le temps gagné sur la saisie.</p>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Est-ce que Claude peut accéder à n'importe quelle messagerie ?</div>
+    <p>Claude peut se connecter aux messageries compatibles avec ses connecteurs (Gmail notamment). Si tu utilises Gmail pour recevoir tes notifications Systèmio, c'est directement utilisable. Pour d'autres messageries, vérifie les connecteurs disponibles dans ton espace Claude.</p>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Est-ce que c'est sécurisé de donner l'accès à mes emails à Claude ?</div>
+    <p>Claude n'accède qu'aux données que tu lui autorises explicitement, via les connecteurs officiels d'Anthropic. Tu peux restreindre l'accès à certains dossiers ou certains expéditeurs uniquement. La connexion est sécurisée et tu peux la révoquer à tout moment.</p>
+  </div>
+
+  <div class="cta">
+    <span class="spk c1" aria-hidden="true">✨</span>
+    <span class="spk c2" aria-hidden="true">✨</span>
+    <span class="spk c3" aria-hidden="true">✨</span>
+    <h3>Reçois le catalogue des services IA prêts à vendre</h3>
+    <p>Des usages concrets comme celui-ci + des services que tu peux proposer à tes clients dès maintenant.</p>
+    <a class="btn" href="https://www.fees-de-lia.com/catalogue"
+       target="_blank" rel="noopener">
+      Recevoir le catalogue gratuit
+    </a>
+  </div>
+
+  <p class="source-note">
+    Informations vérifiées en juillet 2026. Les fonctionnalités des connecteurs Claude évoluent régulièrement.
+  </p>
+
+</article>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Faut-il un compte Claude payant pour faire ça ?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Oui, il faut un compte Claude Pro pour accéder aux connecteurs qui permettent à Claude de lire tes emails et d'écrire dans Notion. L'abonnement mensuel est rentabilisé rapidement quand tu considères le temps gagné sur la saisie." }
+    },
+    {
+      "@type": "Question",
+      "name": "Est-ce que Claude peut accéder à n'importe quelle messagerie ?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Claude peut se connecter aux messageries compatibles avec ses connecteurs (Gmail notamment). Si tu utilises Gmail pour recevoir tes notifications Systèmio, c'est directement utilisable. Pour d'autres messageries, vérifie les connecteurs disponibles dans ton espace Claude." }
+    },
+    {
+      "@type": "Question",
+      "name": "Est-ce que c'est sécurisé de donner l'accès à mes emails à Claude ?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Claude n'accède qu'aux données que tu lui autorises explicitement, via les connecteurs officiels d'Anthropic. Tu peux restreindre l'accès à certains dossiers ou certains expéditeurs uniquement. La connexion est sécurisée et tu peux la révoquer à tout moment." }
+    }
+  ]
+}
+</script>

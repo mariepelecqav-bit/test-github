@@ -1,0 +1,208 @@
+<article class="fdia-article">
+<style>
+  .fdia-article{
+    --corail:#d25050;--rose:#F5E8EF;--slate:#3d4a55;--gris:#8a8f96;--blanc:#ffffff;
+    font-family:'Poppins','Inter',Arial,sans-serif;color:var(--slate);line-height:1.7;
+    max-width:720px;margin:0 auto;padding:0 16px 60px;
+  }
+  .fdia-article *{box-sizing:border-box}
+  .fdia-article .tag{display:inline-block;background:var(--corail);color:#fff;font-size:12px;
+    font-weight:700;letter-spacing:.5px;text-transform:uppercase;padding:5px 14px;
+    border-radius:50px;margin-bottom:16px}
+  .fdia-article h1{font-family:'Chau Philomene One','Poppins',Arial,sans-serif;font-size:34px;
+    line-height:1.2;color:var(--slate);margin:0 0 14px;position:relative}
+  .fdia-article .intro-meta{font-size:14px;color:var(--gris);margin-bottom:28px}
+  .fdia-article .chapo{font-size:19px;color:var(--slate);background:var(--rose);border-radius:16px;
+    padding:22px 24px;margin-bottom:36px}
+  .fdia-article h2{font-family:'Chau Philomene One','Poppins',Arial,sans-serif;font-size:24px;
+    color:var(--slate);margin:44px 0 16px}
+  .fdia-article h3{font-family:'Chau Philomene One','Poppins',Arial,sans-serif;font-size:19px;
+    color:var(--corail);margin:26px 0 10px}
+  .fdia-article p{margin:0 0 16px;font-size:16px}
+  .fdia-article strong{color:var(--slate)}
+  .fdia-article .def{font-weight:700}
+  .fdia-article ul{margin:0 0 20px;padding-left:20px}
+  .fdia-article li{margin-bottom:8px;font-size:16px}
+  .fdia-article a{color:var(--corail);text-decoration:underline}
+  .fdia-article .faq-item{border-bottom:1px solid var(--rose);padding:18px 0}
+  .fdia-article .faq-q{font-weight:700;color:var(--slate);margin-bottom:8px;font-size:16px}
+  .fdia-article .cta{background:var(--corail);color:#fff;border-radius:20px;
+    padding:32px 28px;text-align:center;margin:44px 0;position:relative;overflow:hidden}
+  .fdia-article .cta h3{color:#fff;margin-top:0}
+  .fdia-article .cta a.btn{display:inline-block;background:#fff;color:var(--corail);
+    font-weight:700;padding:12px 26px;border-radius:50px;text-decoration:none;margin-top:8px}
+  .fdia-article .source-note{font-size:13px;color:var(--gris);margin-top:40px;
+    border-top:1px solid var(--rose);padding-top:16px}
+  .fdia-article .prompt-box{background:var(--rose);border-left:4px solid var(--corail);
+    border-radius:0 12px 12px 0;padding:18px 22px;margin:24px 0;font-family:monospace;
+    font-size:14px;line-height:1.7;color:var(--slate);white-space:pre-wrap;overflow-x:auto}
+  .fdia-article .scene-list{list-style:decimal;padding-left:20px;margin:12px 0 24px}
+  .fdia-article .scene-list li{margin-bottom:10px;font-size:15px}
+  .fdia-article .spk{position:absolute;font-size:18px;pointer-events:none;opacity:.85;
+    animation:fdiaFloat 3.4s ease-in-out infinite}
+  .fdia-article .spk.s1{top:-14px;left:-6px}
+  .fdia-article .spk.s2{top:-6px;right:-4px;font-size:14px;animation-delay:.8s}
+  .fdia-article .spk.s3{bottom:-10px;left:40%;font-size:13px;animation-delay:1.6s}
+  @keyframes fdiaFloat{0%,100%{transform:translateY(0) rotate(0);opacity:.5}
+    50%{transform:translateY(-7px) rotate(12deg);opacity:1}}
+  .fdia-article .chapo{animation:fdiaFade .7s ease both}
+  .fdia-article h2{animation:fdiaFade .6s ease both}
+  @keyframes fdiaFade{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+  .fdia-article .cta a.btn{animation:fdiaPulse 2s ease-in-out infinite}
+  @keyframes fdiaPulse{0%,100%{transform:scale(1);box-shadow:0 0 0 0 rgba(255,255,255,.5)}
+    50%{transform:scale(1.05);box-shadow:0 0 0 12px rgba(255,255,255,0)}}
+  .fdia-article .cta .spk{color:#fff;opacity:.9}
+  .fdia-article .cta .c1{top:14px;left:18px}
+  .fdia-article .cta .c2{top:22px;right:22px;font-size:15px}
+  .fdia-article .cta .c3{bottom:16px;left:30%;font-size:13px}
+  @media(prefers-reduced-motion:reduce){
+    .fdia-article .spk,.fdia-article .chapo,.fdia-article h2,
+    .fdia-article .cta a.btn{animation:none}
+  }
+</style>
+
+  <span class="tag">Prompts IA</span>
+  <h1>
+    10 photos IA réalistes avec Gemini : le prompt qui les génère toutes
+    <span class="spk s1" aria-hidden="true">✨</span>
+    <span class="spk s2" aria-hidden="true">🧚‍♀️</span>
+    <span class="spk s3" aria-hidden="true">✨</span>
+  </h1>
+  <p class="intro-meta">Mis à jour en août 2026 · Lecture : 6 minutes</p>
+
+  <p class="chapo">
+    Ce prompt te permet de générer 10 photos réalistes de la même personne dans 10 situations complètement différentes : même visage, même identité, mais décors, tenues, ambiances et styles photo qui changent à chaque image. À coller dans Gemini avec une photo de référence.
+  </p>
+
+  <h2>Pourquoi "même personne, 10 décors" change tout</h2>
+  <p>Le problème classique avec la génération d'images IA, c'est la cohérence. Tu peux générer des dizaines de belles images, mais si le visage change à chaque fois, tu ne peux pas utiliser ces images pour construire une identité visuelle ou alimenter un compte de façon cohérente.</p>
+  <p>Ce prompt résout exactement ce problème. Il demande à Gemini de garder la même identité (mêmes traits, mêmes yeux, même couleur de cheveux) tout en changeant absolument tout le reste : tenue, coiffure, environnement, ambiance, style de photo. Résultat : une série d'images qui paraissent issues d'un vrai shooting dans différents endroits et contextes.</p>
+  <p>C'est utile pour créer du contenu de marque personnelle, des visuels pour un compte client, ou tout simplement explorer différents univers visuels autour d'une même identité.</p>
+
+  <h2>Comment ça fonctionne</h2>
+  <p>
+    <span class="def">Ce prompt est un générateur de scènes : il donne à Gemini des instructions précises sur ce qu'il doit conserver (l'identité physique) et ce qu'il doit complètement renouveler (tout le contexte visuel), et lui demande de produire 10 descriptions de scènes prêtes à générer.</span>
+    Tu colles le prompt dans Gemini, tu joins une photo de référence de la personne, et Gemini te sort 10 descriptions de scènes détaillées. Chaque description est ensuite utilisable directement pour générer une image.
+  </p>
+  <p><strong>Ce que le prompt est :</strong> un prompt en anglais, optimisé pour Gemini, qui produit 10 descriptions de scènes photo ultra-détaillées autour d'une même personne.</p>
+  <p><strong>Ce que le prompt n'est pas :</strong> un moyen de cloner exactement un vrai visage réel. Les résultats sont des visuels inspirés de la photo de référence, pas une reproduction fidèle au pixel. Plus tu veux de ressemblance, plus tu as besoin d'une méthode avancée (avec une image de référence de haute qualité et les bons réglages dans l'outil).</p>
+
+  <h2>Les 10 ambiances générées par le prompt</h2>
+  <p>Le prompt couvre 10 univers visuels distincts, pensés pour être visuellement addictifs et adaptés aux réseaux sociaux :</p>
+  <ol class="scene-list">
+    <li>Bureau luxe minimaliste (tenue crème, lumière matinale, lifestyle éditorial)</li>
+    <li>Rue parisienne café (chemise oversize, pantalon beige, lumière dorée, street photography)</li>
+    <li>Portrait beauté glamour (lèvres rouges, maquillage dramatique, fond noir, mode magazine)</li>
+    <li>Shooting pop-art coloré (lunettes bleues, fond turquoise et jaune, mode futuriste)</li>
+    <li>Campagne mode sobre (costume gris oversize, studio épuré, joaillerie luxe)</li>
+    <li>Scène makeup candide (boucles volumineuses, éclairage beauté, appartement naturel)</li>
+    <li>Mode européenne minimaliste (t-shirt blanc, jupe rouge, mur en pierre, plein soleil)</li>
+    <li>Portrait "rich girl" (bigoudis en billets, maquillage glossy, éclairage rose-violet)</li>
+    <li>Rétro pop vintage (tenue jaune vif, téléphone rose, lumière années 60)</li>
+    <li>Jet privé billionnaire (robe dorée scintillante, vagues platine, nuit cinématographique)</li>
+  </ol>
+
+  <h2>Le prompt complet à copier</h2>
+  <p>Colle ce prompt dans Gemini et joins la photo de référence de la personne. Le prompt est en anglais pour de meilleurs résultats avec les outils de génération d'images :</p>
+
+  <div class="prompt-box">You are a professional AI photo prompt generator.
+I am uploading a reference photo of a woman. Your task is to generate exactly 10 ultra-detailed image prompts featuring the SAME woman from the reference photo.
+
+The generated woman must keep:
+- the same face and facial structure
+- the same eye color
+- the same hair color
+- recognizable facial identity
+- realistic skin texture
+- high-end photorealistic quality
+
+However, you MUST completely change:
+- clothing
+- hairstyle styling (while keeping same hair color)
+- environment
+- mood
+- pose
+- photography style
+- atmosphere
+
+Each image should feel like a real luxury Instagram photoshoot or lifestyle campaign.
+
+The prompts must be inspired by these aesthetics:
+- chic Paris café fashion
+- elegant luxury office aesthetic
+- glamorous beauty editorial
+- colorful pop-art fashion shoot
+- minimalist street style
+- soft feminine makeup scene
+- rich girl luxury aesthetic
+- cinematic sunset fashion photography
+- dreamy flower field
+- luxury private jet aesthetic
+
+Important:
+- Every image must place the SAME woman into a completely different real-life situation
+- Include detailed outfit descriptions
+- Include detailed lighting
+- Include camera angle and framing
+- Include environment details
+- Include mood and atmosphere
+- Make the images visually addictive and Instagram-worthy
+- Keep everything photorealistic, cinematic, highly detailed, sharp focus, premium quality
+
+Output each prompt as a numbered ready-to-copy paragraph between 80 and 140 words, optimized for Gemini image generation.</div>
+
+  <h2>Questions fréquentes</h2>
+  <div class="faq-item">
+    <div class="faq-q">Faut-il un compte payant pour utiliser ce prompt avec Gemini ?</div>
+    <p>Le plan gratuit de Gemini permet de générer des images, mais les résultats sont plus précis et les volumes plus importants avec Gemini Advanced (abonnement Google One). Pour tester le prompt, le plan gratuit suffit pour voir si la méthode fonctionne avec ta photo de référence.</p>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Les images générées ressemblent vraiment à la personne de référence ?</div>
+    <p>Plus la photo de référence est nette, bien éclairée et de haute qualité, meilleure sera la ressemblance. Les outils de génération d'images progressent vite sur ce point. Les résultats sont une interprétation IA de la personne, pas une copie conforme — c'est à la fois une limite et ce qui leur donne un aspect "illustration" soigné.</p>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Est-ce que ce prompt fonctionne aussi avec ChatGPT ou d'autres outils ?</div>
+    <p>Oui. Le prompt est formulé pour fonctionner avec n'importe quel outil de génération d'images qui accepte une photo de référence et un prompt textuel : ChatGPT avec DALL-E, Adobe Firefly, Midjourney (avec la fonction image reference). Chaque outil a ses propres forces sur la cohérence d'identité.</p>
+  </div>
+
+  <div class="cta">
+    <span class="spk c1" aria-hidden="true">✨</span>
+    <span class="spk c2" aria-hidden="true">✨</span>
+    <span class="spk c3" aria-hidden="true">✨</span>
+    <h3>Reçois le catalogue des services IA prêts à vendre</h3>
+    <p>Des prompts comme celui-ci + des services concrets que tu peux proposer à tes clients dès maintenant.</p>
+    <a class="btn" href="https://www.fees-de-lia.com/catalogue"
+       target="_blank" rel="noopener">
+      Recevoir le catalogue gratuit
+    </a>
+  </div>
+
+  <p class="source-note">
+    Informations vérifiées en août 2026. Les capacités de génération d'images de Gemini évoluent régulièrement.
+  </p>
+
+</article>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Faut-il un compte payant pour utiliser ce prompt avec Gemini ?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Le plan gratuit de Gemini permet de générer des images, mais les résultats sont plus précis et les volumes plus importants avec Gemini Advanced (abonnement Google One). Pour tester le prompt, le plan gratuit suffit pour voir si la méthode fonctionne avec ta photo de référence." }
+    },
+    {
+      "@type": "Question",
+      "name": "Les images générées ressemblent vraiment à la personne de référence ?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Plus la photo de référence est nette, bien éclairée et de haute qualité, meilleure sera la ressemblance. Les résultats sont une interprétation IA de la personne, pas une copie conforme — c'est à la fois une limite et ce qui leur donne un aspect illustré soigné." }
+    },
+    {
+      "@type": "Question",
+      "name": "Est-ce que ce prompt fonctionne aussi avec ChatGPT ou d'autres outils ?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Oui. Le prompt est formulé pour fonctionner avec n'importe quel outil de génération d'images qui accepte une photo de référence et un prompt textuel : ChatGPT avec DALL-E, Adobe Firefly, Midjourney. Chaque outil a ses propres forces sur la cohérence d'identité." }
+    }
+  ]
+}
+</script>

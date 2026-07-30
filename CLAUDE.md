@@ -2,36 +2,56 @@
 
 ## Infrastructure
 
-- **Site** : blog.fees-de-lia.com (statique HTML)
-- **Hébergement** : Netlify — déploiement automatique à chaque push
+- **Site** : blog.fees-de-lia.com (Next.js 15 — export statique)
+- **Hébergement** : Netlify — build command `npm run build`, publish dir `out/`
 - **Repo GitHub** : mariepelecqav-bit/test-github
 - **Branche de développement** : `claude/fees-de-lia-blog-refonte-u0wnz1`
-- Pousser sur cette branche → Netlify déploie automatiquement
+- Pousser sur cette branche → Netlify lance `npm run build` et déploie depuis `out/`
+
+## Stack technique
+
+- **Next.js 15** avec App Router + `output: 'export'` (statique)
+- **next-seo** (v6, garmeeh/next-seo — 8 000+ ⭐) — JSON-LD BlogPosting inline
+- **next-sitemap** (v4, iamvishnusankar/next-sitemap — 3 700+ ⭐) — sitemap.xml + robots.txt
+- **TypeScript** strict
 
 ## Structure des fichiers
 
 ```
 /
-├── index.html          # Homepage (grille des articles)
-├── style.css           # CSS global (nav, hero, cards, footer)
+├── app/
+│   ├── layout.tsx              # Shell nav + footer
+│   ├── page.tsx                # Homepage (hero + grille articles)
+│   ├── globals.css             # CSS global (nav, hero, cards, footer)
+│   └── blog/[slug]/page.tsx    # Template article (generateStaticParams)
+├── lib/
+│   └── articles.ts             # Métadonnées de tous les articles
+├── content/
+│   └── blog/
+│       └── [slug].html         # Fragments HTML des articles (CSS inline inclus)
+├── public/
+│   ├── blog/images/            # Couvertures 1200x630
+│   └── llms.txt                # GEO : indexation par les IA
 ├── blog/
-│   ├── generate.js     # Script Node.js — génère les pages depuis les fragments
-│   ├── [slug].html     # Pages article complètes (une par article)
-│   └── images/
-│       └── image-[slug].png   # Couvertures 1200x630
+│   ├── generate.js             # Générateur de fragments (héritage)
+│   └── images/                 # Copies des couvertures (héritage)
+├── next.config.ts
+├── next-sitemap.config.js
+└── netlify.toml
 ```
 
-Netlify sert `blog/erreur-ia-google.html` à l'URL `/blog/erreur-ia-google` (Pretty URLs activé — pas d'extension .html dans les liens).
+Netlify sert `out/blog/erreur-ia-google.html` à l'URL `/blog/erreur-ia-google`.
 
-## Ajouter un article : workflow
+## Ajouter un article : workflow Next.js
 
-1. **Écrire le fragment** : fichier `<article class="fdia-article">…</article>` avec CSS inline, sauvegardé dans le scratchpad
+1. **Écrire le fragment** : fichier `<article class="fdia-article">…</article>` avec CSS inline dans le scratchpad
 2. **Générer la couverture** : `node /root/.claude/skills/blog-fees-de-lia/scripts/generer_image_une.js`
-3. **Ajouter l'article dans `blog/generate.js`** (tableau `articles`)
-4. **Exécuter** : `node blog/generate.js` → génère le HTML complet dans `blog/[slug].html`
-5. **Copier l'image** dans `blog/images/`
-6. **Mettre à jour `index.html`** : ajouter la card dans la grille `.articles-grid`
-7. **Commit + push** sur la branche de développement
+3. **Copier le fragment** dans `content/blog/[slug].html` (juste le fragment, sans le wrapper HTML)
+4. **Copier l'image** dans `public/blog/images/`
+5. **Ajouter l'article dans `lib/articles.ts`** (tableau `articles`, trié par date desc)
+6. **Commit + push** — Netlify rebuild et déploie automatiquement
+
+> Les anciens `blog/[slug].html` et `blog/generate.js` sont conservés pour référence mais ne sont plus servis.
 
 ## Planification éditoriale
 
@@ -79,6 +99,7 @@ La base Notion "Contenus Fées de l'IA" sert de calendrier. Les dates de publica
 | 6-prompts-community-management-ia | IA pour les réseaux sociaux | 2026-09-02 |
 | prompt-audit-malt | Prompts IA | 2026-09-09 |
 | prompt-plan-professionnel-3-ans | Prompts IA | 2026-09-16 |
+| monter-video-avec-claude | Gagner du temps avec l'IA | 2026-07-29 |
 
 ## Skill disponible
 
