@@ -1,10 +1,36 @@
 # Blog LES FÉES DE L'IA — Contexte projet
 
-## Infrastructure
+## ⚠️ ATTENTION : ce repo n'est PAS le blog en ligne
 
-- **Site** : blog.fees-de-lia.com (Next.js 15 — export statique)
-- **Hébergement** : GitHub Pages avec domaine personnalisé (`public/CNAME`)
+**Vérifié le 3 août 2026 par résolution DNS :**
+
+```
+blog.fees-de-lia.com  →  CNAME  →  fees-de-lia-blog.netlify.app
+```
+
+Le blog public **blog.fees-de-lia.com** est servi par **Netlify**, depuis un repo
+**Astro + Tailwind** qui vit en local sur le PC de Marie (`C:\Users\corme\fees-de-lia`).
+Ce repo Astro **n'existe pas sur GitHub** — il est introuvable via `add_repo`.
+
+Ce repo-ci (`mariepelecqav-bit/test-github`) est un **projet Next.js séparé**,
+déployé sur GitHub Pages à `mariepelecqav-bit.github.io/test-github`.
+**Rien de ce qui est publié ici n'apparaît sur blog.fees-de-lia.com.**
+
+### Pour publier un article sur le vrai blog
+
+Il faut lancer Claude Code **sur le PC de Marie**, dans `C:\Users\corme\fees-de-lia` :
+article Markdown avec frontmatter Astro dans `src/content/articles/`, puis push
+(Netlify redéploie tout seul). Les sources d'articles sont sur le Drive, dans
+`G:\Mon Drive\FEES DE L'IA\BLOG\a-publier\` — accessibles aussi via le connecteur
+Google Drive depuis une session distante.
+
+Ne jamais affirmer qu'un article est en ligne sur blog.fees-de-lia.com après un
+déploiement de CE repo. Vérifier le DNS avant toute conclusion sur l'hébergement.
+
+## Infrastructure de ce repo (Next.js, GitHub Pages)
+
 - **Repo GitHub** : mariepelecqav-bit/test-github
+- **URL réelle** : mariepelecqav-bit.github.io/test-github
 - **Branche de développement** : `claude/fees-de-lia-blog-refonte-u0wnz1`
 - Merger sur `main` → GitHub Actions lance `npm run build` → déploie `out/` sur GitHub Pages
 
@@ -40,7 +66,7 @@
 └── .github/workflows/deploy.yml   # GitHub Actions : build + deploy sur push main
 ```
 
-GitHub Pages sert `out/blog/erreur-ia-google.html` à l'URL `/blog/erreur-ia-google`.
+GitHub Pages sert `out/blog/erreur-ia-google.html` à `mariepelecqav-bit.github.io/test-github/blog/erreur-ia-google` (pas sur le domaine personnalisé).
 
 ## Ajouter un article : workflow Next.js
 
@@ -49,7 +75,7 @@ GitHub Pages sert `out/blog/erreur-ia-google.html` à l'URL `/blog/erreur-ia-goo
 3. **Copier le fragment** dans `content/blog/[slug].html` (juste le fragment, sans le wrapper HTML)
 4. **Copier l'image** dans `public/blog/images/`
 5. **Ajouter l'article dans `lib/articles.ts`** (tableau `articles`, trié par date desc)
-6. **Commit + push** — Netlify rebuild et déploie automatiquement
+6. **Commit + push, puis merger sur `main`** — GitHub Actions rebuild et déploie sur GitHub Pages (rappel : pas sur blog.fees-de-lia.com)
 
 > Les anciens `blog/[slug].html` et `blog/generate.js` sont conservés pour référence mais ne sont plus servis.
 
