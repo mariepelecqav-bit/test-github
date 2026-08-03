@@ -3,10 +3,10 @@
 ## Infrastructure
 
 - **Site** : blog.fees-de-lia.com (Next.js 15 — export statique)
-- **Hébergement** : Netlify — build command `npm run build`, publish dir `out/`
+- **Hébergement** : GitHub Pages avec domaine personnalisé (`public/CNAME`)
 - **Repo GitHub** : mariepelecqav-bit/test-github
 - **Branche de développement** : `claude/fees-de-lia-blog-refonte-u0wnz1`
-- Pousser sur cette branche → Netlify lance `npm run build` et déploie depuis `out/`
+- Merger sur `main` → GitHub Actions lance `npm run build` → déploie `out/` sur GitHub Pages
 
 ## Stack technique
 
@@ -37,10 +37,10 @@
 │   └── images/                 # Copies des couvertures (héritage)
 ├── next.config.ts
 ├── next-sitemap.config.js
-└── netlify.toml
+└── .github/workflows/deploy.yml   # GitHub Actions : build + deploy sur push main
 ```
 
-Netlify sert `out/blog/erreur-ia-google.html` à l'URL `/blog/erreur-ia-google`.
+GitHub Pages sert `out/blog/erreur-ia-google.html` à l'URL `/blog/erreur-ia-google`.
 
 ## Ajouter un article : workflow Next.js
 
@@ -100,6 +100,7 @@ La base Notion "Contenus Fées de l'IA" sert de calendrier. Les dates de publica
 | prompt-audit-malt | Prompts IA | 2026-09-09 |
 | prompt-plan-professionnel-3-ans | Prompts IA | 2026-09-16 |
 | monter-video-avec-claude | Gagner du temps avec l'IA | 2026-07-29 |
+| ia-act-ce-qui-te-concerne | Comprendre l'IA | 2026-08-03 |
 
 ## Skill disponible
 

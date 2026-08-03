@@ -1,0 +1,240 @@
+<article class="fdia-article">
+<style>
+  .fdia-article{
+    --corail:#d25050;--rose:#F5E8EF;--slate:#3d4a55;--gris:#8a8f96;--blanc:#ffffff;
+    font-family:'Poppins','Inter',Arial,sans-serif;color:var(--slate);line-height:1.7;
+    max-width:720px;margin:0 auto;padding:0 16px 60px;
+  }
+  .fdia-article *{box-sizing:border-box}
+  .fdia-article .tag{display:inline-block;background:var(--corail);color:#fff;font-size:12px;
+    font-weight:700;letter-spacing:.5px;text-transform:uppercase;padding:5px 14px;
+    border-radius:50px;margin-bottom:16px}
+  .fdia-article h1{font-family:'Chau Philomene One','Poppins',Arial,sans-serif;font-size:34px;
+    line-height:1.2;color:var(--slate);margin:0 0 14px;position:relative}
+  .fdia-article .intro-meta{font-size:14px;color:var(--gris);margin-bottom:28px}
+  .fdia-article .chapo{font-size:19px;color:var(--slate);background:var(--rose);border-radius:16px;
+    padding:22px 24px;margin-bottom:36px}
+  .fdia-article h2{font-family:'Chau Philomene One','Poppins',Arial,sans-serif;font-size:24px;
+    color:var(--slate);margin:44px 0 16px}
+  .fdia-article h3{font-family:'Chau Philomene One','Poppins',Arial,sans-serif;font-size:19px;
+    color:var(--corail);margin:26px 0 10px}
+  .fdia-article p{margin:0 0 16px;font-size:16px}
+  .fdia-article strong{color:var(--slate)}
+  .fdia-article .def{font-weight:700}
+  .fdia-article ul{margin:0 0 20px;padding-left:20px}
+  .fdia-article li{margin-bottom:8px;font-size:16px}
+  .fdia-article a{color:var(--corail);text-decoration:underline}
+  .fdia-article .tablewrap{overflow-x:auto;border-radius:16px;
+    box-shadow:0 8px 24px rgba(61,74,85,.08);margin:24px 0 32px}
+  .fdia-article table{width:100%;border-collapse:collapse;background:#fff;min-width:460px}
+  .fdia-article th,.fdia-article td{padding:13px 16px;text-align:left;
+    border-bottom:1px solid var(--rose);font-size:15px}
+  .fdia-article thead th{background:var(--slate);color:#fff}
+  .fdia-article tbody th{font-weight:700;color:var(--corail);background:var(--rose)}
+  .fdia-article .faq-item{border-bottom:1px solid var(--rose);padding:18px 0}
+  .fdia-article .faq-q{font-weight:700;color:var(--slate);margin-bottom:8px;font-size:16px}
+  .fdia-article .cta{background:var(--corail);color:#fff;border-radius:20px;
+    padding:32px 28px;text-align:center;margin:44px 0;position:relative;overflow:hidden}
+  .fdia-article .cta h3{color:#fff;margin-top:0}
+  .fdia-article .cta a.btn{display:inline-block;background:#fff;color:var(--corail);
+    font-weight:700;padding:12px 26px;border-radius:50px;text-decoration:none;margin-top:8px}
+  .fdia-article .source-note{font-size:13px;color:var(--gris);margin-top:40px;
+    border-top:1px solid var(--rose);padding-top:16px}
+  .fdia-article .result-box{background:var(--rose);border-left:4px solid var(--corail);
+    border-radius:0 12px 12px 0;padding:18px 22px;margin:24px 0;font-size:15px;
+    line-height:1.7;color:var(--slate)}
+  .fdia-article .spk{position:absolute;font-size:18px;pointer-events:none;opacity:.85;
+    animation:fdiaFloat 3.4s ease-in-out infinite}
+  .fdia-article .spk.s1{top:-14px;left:-6px}
+  .fdia-article .spk.s2{top:-6px;right:-4px;font-size:14px;animation-delay:.8s}
+  .fdia-article .spk.s3{bottom:-10px;left:40%;font-size:13px;animation-delay:1.6s}
+  @keyframes fdiaFloat{0%,100%{transform:translateY(0) rotate(0);opacity:.5}
+    50%{transform:translateY(-7px) rotate(12deg);opacity:1}}
+  .fdia-article .chapo{animation:fdiaFade .7s ease both}
+  .fdia-article h2{animation:fdiaFade .6s ease both}
+  @keyframes fdiaFade{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+  .fdia-article .cta a.btn{animation:fdiaPulse 2s ease-in-out infinite}
+  @keyframes fdiaPulse{0%,100%{transform:scale(1);box-shadow:0 0 0 0 rgba(255,255,255,.5)}
+    50%{transform:scale(1.05);box-shadow:0 0 0 12px rgba(255,255,255,0)}}
+  .fdia-article .cta .spk{color:#fff;opacity:.9}
+  .fdia-article .cta .c1{top:14px;left:18px}
+  .fdia-article .cta .c2{top:22px;right:22px;font-size:15px}
+  .fdia-article .cta .c3{bottom:16px;left:30%;font-size:13px}
+  @media(prefers-reduced-motion:reduce){
+    .fdia-article .spk,.fdia-article .chapo,.fdia-article h2,
+    .fdia-article .cta a.btn{animation:none}
+  }
+</style>
+
+  <span class="tag">Comprendre l'IA</span>
+  <h1>
+    IA Act : ce que tu dois vraiment faire (et ce qui ne te concerne pas)
+    <span class="spk s1" aria-hidden="true">✨</span>
+    <span class="spk s2" aria-hidden="true">🧚‍♀️</span>
+    <span class="spk s3" aria-hidden="true">✨</span>
+  </h1>
+  <p class="intro-meta">Mis à jour en août 2026 · Lecture : 8 minutes</p>
+
+  <p class="chapo">
+    Depuis le 2 août 2026, la loi européenne sur l'IA s'applique pour de bon. Bonne nouvelle : tu portes trois choses seulement. Dire quand c'est de l'IA dans certains cas précis, ne jamais utiliser un usage interdit, et savoir expliquer les outils que tu emploies. Le reste, le marquage technique des fichiers, c'est le travail d'OpenAI et de Google, pas le tien.
+  </p>
+
+  <h2>Ce qui a changé le 2 août</h2>
+  <p>Le règlement européen sur l'IA, que tout le monde appelle l'IA Act, est devenu globalement applicable le 2 août 2026. Depuis, tu as sans doute vu passer des posts affolants : des amendes à des millions, des mentions à coller partout, des checklists à rallonge.</p>
+  <p>La vérité est plus calme. Le texte répartit les obligations selon ce que tu fais. La plupart des règles lourdes visent ceux qui fabriquent les outils. Toi qui les utilises, tu en portes une poignée. Encore faut-il savoir lesquelles.</p>
+
+  <h2>D'abord : tu es utilisatrice, pas fabricante</h2>
+  <p><span class="def">Dans le texte, celle qui utilise un outil d'IA pour son travail s'appelle un "déployeur". Celui qui fabrique l'outil et le met sur le marché s'appelle un "fournisseur".</span></p>
+  <p>Tu ouvres ChatGPT pour rédiger les posts d'un client : tu es déployeuse. Ton client qui installe un chatbot sur son site l'est aussi, de son côté. Le fournisseur, c'est OpenAI, Google, Anthropic, Mistral.</p>
+  <p>Une exception à connaître : si tu revends un agent IA sous ta propre marque, tu peux devenir fournisseur au sens du texte, et là les obligations changent d'échelle. Dans ce cas, fais-toi accompagner.</p>
+
+  <h2>Ce qui n'est pas ton problème</h2>
+  <p>Tu as peut-être lu que les contenus IA doivent être marqués "dans un format lisible par machine". C'est le filigrane invisible glissé dans le fichier.</p>
+  <p>Cette obligation-là vise les fabricants d'outils. Tu n'as aucun filigrane à bricoler, aucune donnée cachée à ajouter. Si un prestataire te propose une solution pour "marquer tes contenus et être conforme", relis cette phrase avant de sortir la carte bleue.</p>
+
+  <h2>Ce qui est vraiment obligatoire : dire quand c'est de l'IA</h2>
+  <p><span class="def">Depuis le 2 août 2026, tu dois signaler qu'un contenu vient de l'IA dans deux cas seulement : les deepfakes, et les textes publiés pour informer le public sur un sujet d'intérêt général.</span></p>
+  <p>Un deepfake, au sens du texte, c'est une image, une vidéo ou un son fabriqué par l'IA qui ressemble à une personne, un lieu ou un événement qui existe vraiment, et qui pourrait passer pour authentique.</p>
+  <p><strong>Exemple :</strong> tu génères une photo réaliste d'un artisan devant son chantier pour illustrer un post. Scène crédible, personne qui a l'air vraie : tu mentionnes. Tu génères une illustration graphique, une icône, un fond coloré : tu ne mentionnes pas.</p>
+
+  <h3>L'exception qui sauve tout : tu relis, tu assumes</h3>
+  <p>Le texte le dit noir sur blanc : la mention n'est pas exigée quand le contenu a été relu par un humain qui en assume la responsabilité.</p>
+  <p>Traduction pour ton quotidien : la caption Instagram que tu as fait générer, puis relue, corrigée et validée avant de publier, n'a pas besoin de mention. Ce n'est pas une astuce, c'est écrit dans la loi. En revanche, si un contenu part tout seul en automatique sans que personne ne le lise, tu perds cette protection.</p>
+  <p>Alors garde une trace de ta relecture. Un process écrit, une validation par mail, une date. Ça ne prend rien et ça change tout le jour où on te pose la question.</p>
+
+  <h3>Les phrases à copier</h3>
+  <p>Quand la mention s'impose, elle doit se voir juste à côté du contenu, pas cachée dans les mentions légales en bas de page. Trois formulations qui marchent :</p>
+  <ul>
+    <li>Sous un visuel : <strong>"Image générée par intelligence artificielle"</strong>.</li>
+    <li>En tête d'un article : <strong>"Contenu généré par IA, vérifié par la rédaction"</strong>.</li>
+    <li>Dans un chatbot : <strong>"Vous échangez avec un assistant virtuel basé sur l'intelligence artificielle"</strong>.</li>
+  </ul>
+
+  <h3>Le chatbot de ton client</h3>
+  <p>Une personne qui discute avec une IA doit savoir qu'elle ne parle pas à un humain, sauf si c'est évident. L'obligation de prévoir ce message pèse sur le fabricant de l'outil, mais c'est toi qui règles le message d'accueil. Va le vérifier, ça prend deux minutes.</p>
+
+  <h2>Les 3 usages carrément interdits</h2>
+  <p>Ceux-là ne se rattrapent pas avec une mention. Ils s'interdisent, et ils sont interdits depuis le 2 février 2025. Trois d'entre eux peuvent croiser la route d'une entreprise ordinaire :</p>
+  <ul>
+    <li><strong>Deviner les émotions des salariés au travail.</strong> Interdit, sauf raison médicale ou de sécurité. Si un client te parle d'un outil qui analyse le ton de voix ou le visage de son équipe, dis stop.</li>
+    <li><strong>Noter les gens sur leur comportement social</strong>, avec des conséquences négatives pour eux.</li>
+    <li><strong>Manipuler ou tromper</strong> pour pousser quelqu'un à faire ce qu'il n'aurait pas fait.</li>
+  </ul>
+
+  <h2>L'obligation que personne ne connaît : savoir ce que tu fais</h2>
+  <p><span class="def">La loi demande à toute personne qui utilise l'IA au travail d'avoir un niveau suffisant de maîtrise de ces outils, et de faire monter en compétence ceux qui les utilisent pour son compte.</span></p>
+  <p>Elle existe depuis le 2 février 2025, et la surveillance par les autorités a commencé le 2 août 2026. Autrement dit : tu n'es pas en retard, mais l'excuse "je ne savais pas" a une date de péremption. Un texte européen de juillet 2026 a d'ailleurs assoupli la formulation, on parle maintenant de soutenir cette montée en compétence plutôt que de la garantir.</p>
+  <p>Concrètement, si tu travailles seule : savoir ce que fait ton outil, connaître ses limites, pouvoir l'expliquer à un client. Si tu délègues ou si tu formes l'équipe d'un client : les briefer, et garder l'écrit. Un simple tableau avec tes ateliers suivis, leurs dates et leur contenu suffit.</p>
+  <p><strong>Et méfie-toi de ce que tu lis là-dessus.</strong> Beaucoup d'articles affirment que ne pas former ton équipe t'expose à 15 millions d'euros d'amende. C'est faux. La liste officielle des manquements passibles de cette amende ne mentionne pas cette obligation-là. Ces articles sont souvent écrits par des organismes qui vendent de la formation.</p>
+
+  <h2>Le tri de CV et compagnie : c'est pour plus tard</h2>
+  <p>C'est la catégorie qui fait peur : l'IA utilisée pour recruter, pour évaluer des élèves, pour accorder un crédit, pour reconnaître des personnes. On appelle ça les systèmes à haut risque, et les obligations sont sérieuses.</p>
+  <p>Bonne nouvelle : elles viennent d'être repoussées. Un texte européen surnommé le Digital Omnibus, publié au Journal officiel de l'Union le 24 juillet 2026, a décalé ces règles au 2 décembre 2027, et à août 2028 pour une autre catégorie.</p>
+  <p>Ton rôle aujourd'hui : repérer quels clients sont concernés et le noter quelque part. Pas les affoler.</p>
+
+  <h2>Les données de tes clients : autre sujet, autre règle</h2>
+  <p>Attention à ne pas tout mélanger. L'IA Act encadre les outils d'IA. Le RGPD encadre les données personnelles. Les deux s'appliquent en même temps.</p>
+  <p>Dès que tu colles dans un prompt le fichier clients de ton client, sa liste d'emails ou des messages avec des noms dedans, tu manipules des données personnelles. Les règles habituelles s'appliquent : une raison claire, le minimum de données, l'information des personnes, la sécurité.</p>
+  <p>La règle simple à retenir : avant de verser des données dans un outil, vérifie ce que l'éditeur en fait (est-ce qu'il s'en sert pour entraîner ses modèles, et peux-tu désactiver l'option), et demande l'accord écrit du client. Une ligne dans un mail suffit à prouver qu'il était au courant.</p>
+
+  <h2>Le tableau pour t'y retrouver</h2>
+  <div class="tablewrap">
+    <table>
+      <thead>
+        <tr><th>Ta situation</th><th>Tu mentionnes ?</th><th>Ce que tu fais</th></tr>
+      </thead>
+      <tbody>
+        <tr><th>Un post écrit avec l'IA et relu par toi</th><td>Non</td><td>Tu relis vraiment et tu gardes la trace</td></tr>
+        <tr><th>Un visuel réaliste avec une personne ou un lieu existant</th><td>Oui</td><td>"Image générée par intelligence artificielle" sous le visuel</td></tr>
+        <tr><th>Un article d'actu publié en automatique</th><td>Oui si le sujet touche l'intérêt général</td><td>Tu mets la mention, ou tu relis avant de publier</td></tr>
+        <tr><th>Un chatbot sur le site d'un client</th><td>La personne doit savoir que c'est une IA</td><td>Tu vérifies le message d'accueil</td></tr>
+        <tr><th>Une newsletter client validée par le client</th><td>Non</td><td>Tu gardes la trace de la validation</td></tr>
+        <tr><th>Le filigrane technique dans le fichier</th><td>Ce n'est pas ta charge</td><td>Rien, c'est le travail de l'éditeur</td></tr>
+        <tr><th>Du tri de CV chez un client</th><td>Autre catégorie</td><td>Tu le notes, échéance décembre 2027</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Ta checklist en 7 points</h2>
+  <ul>
+    <li><strong>Liste tes outils IA.</strong> Lesquels, pour quel client, pour quel type de contenu. Une page suffit.</li>
+    <li><strong>Écris ta règle de relecture en 5 lignes.</strong> Ce que tu génères, ce que tu relis, qui valide avant publication. C'est ce papier qui prouve que tu gardes la main.</li>
+    <li><strong>Ajoute la mention sur tes visuels réalistes.</strong> Sous l'image, ou en premier commentaire sur les réseaux. Commence par ceux qui montrent des personnes.</li>
+    <li><strong>Vérifie les chatbots que tu as installés.</strong> Le message d'accueil doit dire que c'est une IA.</li>
+    <li><strong>Note tes formations IA.</strong> Ateliers suivis, dates, contenu. C'est ta preuve de compétence.</li>
+    <li><strong>Repère tes clients concernés par le haut risque.</strong> Recrutement, crédit, reconnaissance de personnes. Échéance décembre 2027.</li>
+    <li><strong>Demande l'accord écrit du client</strong> avant de mettre ses données dans un outil IA.</li>
+  </ul>
+
+  <h2>Ce que tu écris dans ton contrat</h2>
+  <p>Trois phrases suffisent, et elles te protègent autant qu'elles rassurent ton client. L'idée : dire que tu utilises l'IA, dire que tu relis, dire qui valide.</p>
+  <p>Par exemple : "Certains contenus sont produits avec l'aide d'outils d'intelligence artificielle. Ils font systématiquement l'objet d'une relecture et d'une validation humaine avant publication. Le client est informé des outils utilisés et donne son accord préalable pour tout traitement de données personnelles via ces outils."</p>
+  <p>Si ton client est une grosse structure, fais relire cette clause par un juriste. Pour une petite entreprise, c'est déjà bien mieux que le silence.</p>
+
+  <h2>Les amendes : remets-les à leur place</h2>
+  <p>Les chiffres qui circulent sont réels : jusqu'à 15 millions d'euros ou 3 % du chiffre d'affaires mondial pour un manquement à la transparence, jusqu'à 35 millions ou 7 % pour un usage interdit.</p>
+  <p>Mais ce sont des plafonds européens calibrés pour les géants du numérique. Une amende à sept chiffres contre une assistante web indépendante n'a jamais été l'objectif de ce texte. Les montants sont réduits pour les petites structures, et les autorités doivent tenir compte de la gravité et du fait que le manquement soit volontaire ou non.</p>
+  <p>En France, le gouvernement a proposé en septembre 2025 de confier la coordination à la DGCCRF, avec la CNIL et l'Arcom selon les sujets. Ce schéma devait passer par le Parlement. Au dernier point que j'ai pu vérifier, en février 2026, le texte était passé au Sénat et devait encore aller à l'Assemblée nationale. Je ne sais pas s'il a été adopté définitivement depuis, et je préfère te le dire plutôt que d'inventer.</p>
+
+  <h2>Ce qu'on ne sait pas encore</h2>
+  <p>Deux zones de flou, que personne ne peut honnêtement trancher aujourd'hui.</p>
+  <p>La notion de "sujet d'intérêt général" n'est pas définie précisément. Un article sur la santé, l'environnement ou la politique, oui clairement. Une fiche produit ou un post lifestyle, très probablement pas. Entre les deux, il faudra attendre les premières décisions.</p>
+  <p>Le niveau de relecture qui compte comme un vrai contrôle humain n'est pas chiffré non plus. Corriger deux virgules ne suffira sans doute pas. Réécrire, vérifier les faits, assumer la publication, oui.</p>
+  <p>Et pour finir, une phrase importante : <strong>cet article n'est pas un conseil juridique.</strong> Il te donne ce que dit le texte, avec les sources pour aller vérifier toi-même. Pour une situation client à gros enjeu, parle à un avocat.</p>
+
+  <h2>Questions fréquentes</h2>
+  <div class="faq-item">
+    <div class="faq-q">Dois-je écrire "généré par IA" sous chaque post rédigé avec ChatGPT ?</div>
+    <p>Non. La mention est obligatoire pour les deepfakes et pour les textes publiés afin d'informer le public sur un sujet d'intérêt général. Un post client que tu as relu et validé avant publication bénéficie de l'exception de relecture humaine prévue par le texte.</p>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Suis-je concernée par l'IA Act si je travaille seule, sans salarié ?</div>
+    <p>Oui. Dès que tu utilises un outil d'IA pour ton travail, tu es considérée comme une utilisatrice professionnelle au sens du règlement. La taille de ta structure ne change pas ça, même si les sanctions doivent rester proportionnées.</p>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Mon client trie des CV avec l'IA, que dois-je lui dire ?</div>
+    <p>Le tri de candidatures fait partie des usages à haut risque. Ces obligations ont été repoussées au 2 décembre 2027 par le texte européen publié le 24 juillet 2026. Il n'y a rien à faire dans l'immédiat, mais il faut anticiper la documentation et la supervision humaine du dispositif.</p>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Puis-je mettre le fichier clients de mon client dans ChatGPT ?</div>
+    <p>Ce n'est pas une question d'IA Act mais de RGPD. Il faut une raison claire, le minimum de données, l'accord et l'information du client, et une vérification de ce que l'éditeur de l'outil fait de tes saisies, notamment s'il les réutilise pour entraîner ses modèles.</p>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Quelle amende je risque si j'oublie une mention ?</div>
+    <p>Le texte prévoit jusqu'à 15 millions d'euros ou 3 % du chiffre d'affaires mondial pour un manquement à la transparence. Ces plafonds visent les grandes entreprises, ils sont réduits pour les petites structures, et les autorités tiennent compte de la gravité du manquement.</p>
+  </div>
+
+  <div class="cta">
+    <span class="spk c1" aria-hidden="true">✨</span>
+    <span class="spk c2" aria-hidden="true">✨</span>
+    <span class="spk c3" aria-hidden="true">✨</span>
+    <h3>Chaque lundi, l'IA décryptée sans panique</h3>
+    <p>Une actu vérifiée, un prompt à tester, un outil utile. Rien d'autre, et c'est gratuit.</p>
+    <a class="btn" href="https://www.fees-de-lia.com/inscription-newsletter"
+       target="_blank" rel="noopener">
+      Je m'abonne à la newsletter
+    </a>
+  </div>
+
+  <p class="source-note">Sources : <a href="https://artificialintelligenceact.eu/article/50/" target="_blank" rel="noopener">Règlement (UE) 2024/1689, article 50</a> · <a href="https://artificialintelligenceact.eu/article/5/" target="_blank" rel="noopener">article 5</a> · <a href="https://artificialintelligenceact.eu/article/4/" target="_blank" rel="noopener">article 4</a> · <a href="https://artificialintelligenceact.eu/article/99/" target="_blank" rel="noopener">article 99</a> · <a href="https://digital-strategy.ec.europa.eu/en/faqs/ai-literacy-questions-answers" target="_blank" rel="noopener">Commission européenne, FAQ maîtrise de l'IA</a> · <a href="https://fpf.org/blog/the-ai-act-implementation-timeline-what-changes-under-the-ai-omnibus/" target="_blank" rel="noopener">Future of Privacy Forum, calendrier après le Digital Omnibus, 28 juillet 2026</a> · <a href="https://www.blogdumoderateur.com/ia-act-2-aout-2026/" target="_blank" rel="noopener">Blog du Modérateur, 29 juillet 2026</a> · <a href="https://www.entreprises.gouv.fr/priorites-et-actions/transition-numerique/soutenir-le-developpement-de-lia-au-service-de-0" target="_blank" rel="noopener">Direction générale des Entreprises, autorités françaises</a> · <a href="https://www.cnil.fr/fr/ia-et-rgpd-la-cnil-publie-ses-nouvelles-recommandations-pour-accompagner-une-innovation-responsable" target="_blank" rel="noopener">CNIL, IA et RGPD</a>. Infos vérifiées en août 2026, susceptibles d'évoluer.</p>
+
+</article>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "Dois-je écrire \"généré par IA\" sous chaque post rédigé avec ChatGPT ?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Non. La mention est obligatoire pour les deepfakes et pour les textes publiés afin d'informer le public sur un sujet d'intérêt général. Un post client que tu as relu et validé avant publication bénéficie de l'exception de relecture humaine prévue par le texte." } },
+    { "@type": "Question", "name": "Suis-je concernée par l'IA Act si je travaille seule, sans salarié ?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Oui. Dès que tu utilises un outil d'IA pour ton travail, tu es considérée comme une utilisatrice professionnelle au sens du règlement. La taille de ta structure ne change pas ça, même si les sanctions doivent rester proportionnées." } },
+    { "@type": "Question", "name": "Mon client trie des CV avec l'IA, que dois-je lui dire ?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Le tri de candidatures fait partie des usages à haut risque. Ces obligations ont été repoussées au 2 décembre 2027 par le texte européen publié le 24 juillet 2026. Il n'y a rien à faire dans l'immédiat, mais il faut anticiper la documentation et la supervision humaine du dispositif." } },
+    { "@type": "Question", "name": "Puis-je mettre le fichier clients de mon client dans ChatGPT ?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Ce n'est pas une question d'IA Act mais de RGPD. Il faut une raison claire, le minimum de données, l'accord et l'information du client, et une vérification de ce que l'éditeur de l'outil fait de tes saisies, notamment s'il les réutilise pour entraîner ses modèles." } },
+    { "@type": "Question", "name": "Quelle amende je risque si j'oublie une mention ?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Le texte prévoit jusqu'à 15 millions d'euros ou 3 % du chiffre d'affaires mondial pour un manquement à la transparence. Ces plafonds visent les grandes entreprises, ils sont réduits pour les petites structures, et les autorités tiennent compte de la gravité du manquement." } }
+  ]
+}
+</script>
