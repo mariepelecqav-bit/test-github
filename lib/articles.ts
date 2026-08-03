@@ -58,6 +58,14 @@ export const articles: Article[] = [
     tag: "Gagner du temps avec l'IA",
   },
   {
+    slug: 'ia-act-ce-qui-te-concerne',
+    title: "IA Act : ce que tu dois vraiment faire (et ce qui ne te concerne pas)",
+    desc: "Depuis le 2 août 2026, l'IA Act s'applique. Voici, en mots simples, ce que tu dois mettre en place pour toi et pour tes clients.",
+    image: 'cover-ia-act-ce-qui-te-concerne.png',
+    date: '2026-08-03',
+    tag: "Comprendre l'IA",
+  },
+  {
     slug: 'suivi-budget-automatique-claude-notion',
     title: "Suivi budget automatisé avec Claude et Notion : fini la saisie manuelle",
     desc: "Claude surveille tes emails Systèmio, extrait chaque paiement et remplit ta base Notion. Ton CA en temps réel, sans lever le petit doigt.",
