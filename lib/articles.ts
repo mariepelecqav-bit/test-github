@@ -7,8 +7,17 @@ export interface Article {
   tag: string
 }
 
-// Sorted by date descending (newest first)
+// L'ordre du tableau = l'ordre d'affichage sur la homepage.
+// Article mis en avant en tête, puis les autres par date décroissante.
 export const articles: Article[] = [
+  {
+    slug: 'ia-act-ce-qui-te-concerne',
+    title: "IA Act : ce que tu dois vraiment faire (et ce qui ne te concerne pas)",
+    desc: "Depuis le 2 août 2026, l'IA Act s'applique. Voici, en mots simples, ce que tu dois mettre en place pour toi et pour tes clients.",
+    image: 'cover-ia-act-ce-qui-te-concerne.png',
+    date: '2026-08-03',
+    tag: "Comprendre l'IA",
+  },
   {
     slug: 'prompt-plan-professionnel-3-ans',
     title: "Construis ton plan professionnel à 3 ans avec ce prompt IA",
